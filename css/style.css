@@ -1,0 +1,71 @@
+body {
+    font-family: 'Yanone Kaffeesatz',
+        sans-serif;
+}
+
+.navigation_bar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.links {
+    display: flex;
+}
+
+.link_to_section {
+    padding: 0 15px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#MUSICA {
+    font-size: 32px;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.salon_photo_left,
+.salon_photo_right {
+    height: 396px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.salon_photo_right div {
+    height: 198px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pt-50 {
+    padding: 59px 0;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.flex-column {
+    width: 194px;
+    padding: 0 5px;
+    margin: 5px;
+}
+
+.flex-column div {
+    width: 194px;
+    height: 224px;
+    overflow: hidden;
+}
+
+.flex-column h3 {
+    margin: 10px 0 0 0;
+}
+
+.our_services {
+    padding: 50px 0 50px 50%;
+}
