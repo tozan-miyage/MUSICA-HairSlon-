@@ -209,7 +209,7 @@
                 <div class="row">
                     <div class="col-7 p-0 caption">
                         <h2>CUTTING</h2>
-                        <div class="caption_photo" >
+                        <div class="caption_photo">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/cutting.jpg" alt="">
                         </div>
                     </div>
@@ -271,7 +271,140 @@
             </div>
 
         </section>
+        <section id="color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 p-0">
+                        <table class="services_menu_table">
+                            <tr>
+                                <th>CUT</th>
+                                <th>WOMEN</th>
+                                <th>MEN</th>
+                            </tr>
+                            <tr>
+                                <td>Stylist</td>
+                                <td>$80</td>
+                                <td>$70</td>
+                            </tr>
+                            <tr>
+                                <td>Senior Stylist</td>
+                                <td>$90</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Master Stylist</td>
+                                <td>$110</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Celebrity Stylist</td>
+                                <td>$POA</td>
+                                <td>$POA</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-7 p-0 caption">
+                        <h2>COLOR</h2>
+                        <div class="caption_photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/color.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <section id="STYLE">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 p-0 caption">
+                        <h2>STYLE</h2>
+                        <div class="caption_photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/styling.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-5 p-0">
+                        <table class="services_menu_table">
+                            <tr>
+                                <th>CUT</th>
+                                <th>WOMEN</th>
+                                <th>MEN</th>
+                            </tr>
+                            <tr>
+                                <td>Stylist</td>
+                                <td>$80</td>
+                                <td>$70</td>
+                            </tr>
+                            <tr>
+                                <td>Senior Stylist</td>
+                                <td>$90</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Master Stylist</td>
+                                <td>$110</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Celebrity Stylist</td>
+                                <td>$POA</td>
+                                <td>$POA</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Style Menu</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <section id="section_name">
             <div class="container">
                 <div class="row">

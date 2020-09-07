@@ -56,6 +56,7 @@ body {
 
 h2 {
     font-size: 48px;
+    padding: 0 0 0 50px;
 }
 
 .flex-column {
@@ -75,13 +76,14 @@ h2 {
 }
 
 .our_services {
-    padding: 50px 0 50px 50%;
+    padding: 0px 0 50px 50%;
 }
 
 .caption {
     padding: 0 0 0 30px;
     height: 403px;
     overflow: hidden;
+    margin: 0 0 70px;
 }
 
 .caption_photo {
@@ -90,7 +92,7 @@ h2 {
 
 .caption img {
     width: 100%;
-    width: 600px;
+    height: 600px;
     margin: 18px 0 0 0;
     object-fit: cover;
 }
@@ -139,5 +141,5 @@ td {
 }
 
 .services_menu_table tr:nth-child(even) {
-    background: ghostwhite;
+    background: #F6F6F6;
 }
