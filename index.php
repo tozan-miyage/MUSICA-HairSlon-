@@ -472,6 +472,62 @@
             </div>
         </section>
         <!-- EXPRESSION OF EXCELLENCE end -->
+        <!-- PROMOTIONS AND SPECIALS -->
+        <section id="promotions_and_specials">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="promotions_slide">
+                            <h2 class="promotions_h2">PROMOTIONS AND SPECIALS</h2>
+                            <!-- Slider main container -->
+                            <div class="swiper-container3">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="promotions_caption">
+                                            <h3>HAPPY HAIR</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, </p>
+                                            <!-- If we need navigation buttons -->
+                                            <div class="swiper_button_area">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="promotions_img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="promotions_caption">
+                                            <h3>HAPPY COLOR</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, </p>
+                                            <!-- If we need navigation buttons -->
+                                            <div class="swiper_button_area">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="promotions_img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/stock-photo-beautiful-young-woman-with-short-brown-haircut-wears-pink-lipstick-on-studio-background-with-copy-104353226.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- PROMOTIONS AND SPECIALS end-->
+
         <section id="section_name">
             <div class="container">
                 <div class="row">
@@ -479,7 +535,6 @@
 
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 
