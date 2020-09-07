@@ -403,8 +403,75 @@
                     </div>
                 </div>
             </div>
-
         </section>
+        <!-- OUR_SERVICES end -->
+        <!-- APPOINTMENT -->
+        <section id="appointment">
+            <div class="form_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="caption_appointment">
+                                <h2>MAKE AN APPOINTMENT</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-8 appointment_left">
+                                <div class="input_caption">
+                                    <p>Name</p>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                                <div class="input_caption">
+                                    <p>Email</p>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                <div class="input_caption">
+                                    <p>Phone number</p>
+                                    <input type="tel" id="tel" name="tel">
+                                </div>
+                                <div class="input_caption">
+                                    <p>Date</p>
+                                    <input type="date" id="date" name="date">
+                                </div class="input_caption">
+                                <div class="input_caption">
+                                    <p>Time</p>
+                                    <input type="time" id="time" name="time">
+                                </div>
+                            </div>
+                            <div class="col-4 appointment_right">
+                                <div class="input_caption">
+                                    <p>Description</p>
+                                    <textarea id="description" name="description"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" value="submit" class="form_submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- APPOINTMENT end -->
+        <!-- EXPRESSION OF EXCELLENCE -->
+        <section id="expression_of_excellence">
+            <div class="container-field">
+                <div class="row">
+                    <div class="col p-0 expression_image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/person.jpg" alt="">
+                        <div class="expression_caption">
+                            <h2>EXPRESSION OF<br>EXCELLENCE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EXPRESSION OF EXCELLENCE end -->
         <section id="section_name">
             <div class="container">
                 <div class="row">
