@@ -1,3 +1,11 @@
+/*Theme Name: MUSICA salon
+Theme URI: https: //www.sejuku.net/ 
+Description: MUSICA WordPressサイトです。
+Version: 1.0.0 
+Author: miyazato 
+Author URI:
+*/
+
 body {
     font-family: 'Yanone Kaffeesatz',
         sans-serif;
@@ -68,4 +76,68 @@ h2 {
 
 .our_services {
     padding: 50px 0 50px 50%;
+}
+
+.caption {
+    padding: 0 0 0 30px;
+    height: 403px;
+    overflow: hidden;
+}
+
+.caption_photo {
+    /* height: 400px; */
+}
+
+.caption img {
+    width: 100%;
+    width: 600px;
+    margin: 18px 0 0 0;
+    object-fit: cover;
+}
+
+.services_menu_table {
+    border-style: none;
+}
+
+.services_menu_table th,
+td {
+    padding: 10px 5px 5px 18px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+
+}
+
+.services_menu_table th {
+    font-size: 18px;
+    color: white;
+    background: black;
+}
+
+.services_menu_table th+th {
+    border-left: solid 1px gainsboro;
+}
+
+.services_menu_table th+th+th {
+    border-right: solid 1px black;
+}
+
+.services_menu_table td {
+    border: solid 1px gainsboro;
+}
+
+.services_menu_table tr :nth-child(1) {
+    width: 200px;
+}
+
+.services_menu_table tr :nth-child(2) {
+    width: 170px;
+}
+
+.services_menu_table tr :nth-child(3) {
+    width: 130px;
+}
+
+.services_menu_table tr:nth-child(even) {
+    background: ghostwhite;
 }
