@@ -328,8 +328,8 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-7 p-0 caption">
-                        <h2>COLOR</h2>
+                    <div class="col-7 p-0 caption ">
+                        <h2 class="pl-5">COLOR</h2>
                         <div class="caption_photo">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/color.jpg" alt="">
                         </div>
@@ -526,7 +526,32 @@
             </div>
         </section>
         <!-- PROMOTIONS AND SPECIALS end-->
+        <!-- video -->
+        <section id="VIDEO">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 video_iframe">
+                        <iframe width="100%" height="410px" src="https://www.youtube.com/embed/vZHf3ZVJhUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4">
+                        <div class="video_caption">
+                            <h2>SHOWREEL</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- video end -->
+        <!-- testmonials -->
+        <section id="section_name">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
 
+                    </div>
+                </div>
+        </section>
+        <!-- testmonials end -->
         <section id="section_name">
             <div class="container">
                 <div class="row">
