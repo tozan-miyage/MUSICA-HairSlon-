@@ -483,7 +483,6 @@
                             <div class="swiper-container3">
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
-
                                     <!-- Slides -->
                                     <div class="swiper-slide">
                                         <div class="promotions_caption">
