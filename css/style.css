@@ -268,3 +268,33 @@ textarea {
 .video_caption {
     padding: 30px;
 }
+
+#testmonials {
+    background: whitesmoke;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+.swiper_container4_slide {
+    background: whitesmoke;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.testmonials_h2 {
+    padding: 40px 40px 20px;
+    margin: 0;
+}
+
+.customer_voice {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#CONTACT {
+    background: black;
+    height: 500px;
+}

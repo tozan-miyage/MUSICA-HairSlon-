@@ -543,23 +543,68 @@
         </section>
         <!-- video end -->
         <!-- testmonials -->
-        <section id="section_name">
-            <div class="container">
+        <section id="testmonials">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col">
+                        <h2 class="testmonials_h2">TESTIMONIALS</h2>
 
+                        <div class="swiper-container3">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="swiper_container4_slide">
+                                        <div class="customer_voice">
+                                            <h3>customer_name</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper_container4_slide">
+                                        <div class="customer_voice">
+                                            <h3>customer_name2</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper_container4_slide">
+                                        <div class="customer_voice">
+                                            <h3>customer_name3</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem,</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- testmonials end -->
-        <section id="section_name">
-            <div class="container">
+        <!-- CONTACT -->
+        <section id="CONTACT">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col">
 
                     </div>
                 </div>
         </section>
+        <!-- CONTACT end -->
     </main>
 
     <!-- メインend -->

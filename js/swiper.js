@@ -40,6 +40,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
+
 // var swiper = new Swiper('.swiper-container2', {
 //     spaceBetween: 30,
 //     centeredSlides: true,
@@ -59,11 +60,12 @@ var swiper = new Swiper('.swiper-container', {
 //     },
 // });
 
-var swiper = new Swiper('.swiper-container3', {
+var swiper3 = new Swiper('.swiper-container3', {
     spaceBetween: 30,
     centeredSlides: true,
+    loop: true,
     autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
