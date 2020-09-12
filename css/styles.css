@@ -45,14 +45,21 @@ a:hover {
 .salon_photo_right {
     height: 396px;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    object-fit: cover;
 }
 
 .salon_photo_right div {
-    height: 198px;
+    height: 190px;
     padding: 0;
     overflow: hidden;
 }
+
+.salon_photo_left img,
+.salon_photo_right img {
+    width: 100%;
+}
+
 
 .pt-50 {
     padding: 59px 0;
@@ -86,7 +93,7 @@ h2 {
     padding: 0 0 0 30px;
     height: 403px;
     overflow: hidden;
-    margin: 0 0 70px;
+    margin: -41px 0 130px;
 }
 
 .caption_photo {
