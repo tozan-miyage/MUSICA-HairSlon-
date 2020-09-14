@@ -1,9 +1,9 @@
 <footer>
-    <section id="section_name">
+    <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col">
-
+                <div class="col footer">
+                    <p>copyright 2020 MUSICA</p>
                 </div>
             </div>
         </div>

@@ -367,3 +367,18 @@ textarea {
 .contact_submit {
     width: 100%;
 }
+
+.contact_form input,
+textarea {
+    padding: 0 0 0 5px;
+}
+
+.footer {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
