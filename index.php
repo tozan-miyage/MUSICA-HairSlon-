@@ -576,11 +576,58 @@
     <!-- CONTACT -->
     <section id="CONTACT">
         <div class="container-fluid">
+            <h2>CONTACT</h2>
             <div class="row">
-                <div class="col">
-
+                <div class="col-7 d-flex">
+                    <div class="google_map">
+                    </div>
+                    <div class="contact_address">
+                        <p>okinawa</p>
+                        <p>itoman-nishizaki</p>
+                        <p>Phone 090-9876-5432</p>
+                        <p>Email sample@gmail.co.jp</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <form action="" method="post">
+                        <div class="container">
+                            <div class="contact_form">
+                                <div class="row">
+                                    <!-- <div class="col-12 contact_top m-0 p-0 d-flex"> -->
+                                    <div class="contact_caption col-6">
+                                        <input type="text" class="" id="contact_name" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="contact_caption col-6">
+                                        <input type="email" id="contact_email" name="email" placeholder="Email">
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="row">
+                                    <!-- <div class="col-12 contact_top m-0 p-0"> -->
+                                    <div class="contact_caption col-6">
+                                        <input type="tel" id="contact_tel" name="tel" placeholder="Tel">
+                                    </div>
+                                    <div class="contact_caption col-6">
+                                        <input type="text" id="contact_campany_name" name="campany_name" placeholder="Campany name">
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                                <div class="row">
+                                    <!-- <div class="col-12 contact_down m-0 p-0"> -->
+                                    <div class="contact_caption_description col-12">
+                                        <textarea id="contact_description" name="description" placeholder="description"></textarea>
+                                    </div>
+                                    <div class="contact_caption_description col-12">
+                                        <input class="contact_submit" type="submit" value="submit" class="form_submit">
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
     </section>
     <!-- CONTACT end -->
 </main>

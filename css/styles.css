@@ -41,6 +41,10 @@ a:hover {
     margin: 0 auto;
 }
 
+#salon_image {
+    margin: 0 0 50px;
+}
+
 .salon_photo_left,
 .salon_photo_right {
     height: 396px;
@@ -314,4 +318,52 @@ textarea {
 #CONTACT {
     background: black;
     height: 500px;
+    color: white;
+    padding: 60px 120px;
+}
+
+#CONTACT h2 {
+    margin: 0 0 30px;
+}
+
+.google_map {
+    width: 60%;
+    height: 270px;
+    background-color: #f6f6f9;
+}
+
+.contact_address {
+    width: 40%;
+    height: 270px;
+    background-color: white;
+    padding: 30px;
+    color: black;
+}
+
+.contact_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.conctact_down {
+    padding: 0;
+    margin: 0;
+}
+
+.contact_caption input {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+#contact_description {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.contact_submit {
+    width: 100%;
 }
