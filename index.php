@@ -178,15 +178,28 @@
 
     <section id="cutting">
         <div class="container">
-            <div class="row">
-                <div class="col-7 p-0 caption">
-                    <h2>CUTTING</h2>
-                    <div class="caption_photo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_cut1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-5 p-0">
-                    <table class="services_menu_table">
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'post_per_page' => 3,
+                'category_name' => 'service'
+            );
+            $service_query = new WP_Query($args);
+            ?>
+            <?php if ($service_query->have_posts()) : ?>
+                <?php while ($service_query->have_posts()) : ?>
+                    <?php $service_query->the_post(); ?>
+                    <div class="row">
+                        <div class="col-7 p-0 caption">
+                            <h2><?php the_title(); ?></h2>
+                            <div class="caption_photo">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                        </div>
+                        <div class="col-5 p-0">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
+                                <?php the_content(); ?>
+                                <!-- <table class="services_menu_table">
                         <tr>
                             <th>CUT</th>
                             <th>WOMEN</th>
@@ -237,9 +250,13 @@
                             <td>$</td>
                             <td>$</td>
                         </tr>
-                    </table>
-                </div>
-            </div>
+                    </table> -->
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
 
     </section>
@@ -456,35 +473,38 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="promotions_caption">
-                                        <h3>HAPPY HAIR</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, </p>
-                                        <!-- If we need navigation buttons -->
-                                        <div class="swiper_button_area">
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
+                                <?php
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'post_per_page' => '3',
+                                    'category_name' => 'promotion',
+                                );
+                                $promotion_query = new WP_Query($args);
+                                ?>
+                                <?php if ($promotion_query->have_posts()) : ?>
+                                    <?php while ($promotion_query->have_posts()) : ?>
+                                        <?php $promotion_query->the_post(); ?>
+                                        <div class="swiper-slide">
+                                            <div class="promotions_caption">
+                                                <h3>
+                                                    <?php the_title(); ?>
+                                                </h3>
+                                                <?php the_content(); ?>
+                                                <!-- If we need navigation buttons -->
+                                                <div class="swiper_button_area">
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                </div>
+                                            </div>
+                                            <div class="promotions_img">
+                                                <?php the_post_thumbnail(array(500, 300)); ?>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="promotions_img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/hair_styling2.jpg" alt="">
-                                    </div>
-                                </div>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="promotions_caption">
-                                        <h3>HAPPY COLOR</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, </p>
-                                        <!-- If we need navigation buttons -->
-                                        <div class="swiper_button_area">
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                    <div class="promotions_img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/hair_styling1.jpg" alt="">
-                                    </div>
-                                </div>
+
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
@@ -525,31 +545,29 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="swiper_container4_slide">
-                                    <div class="customer_voice">
-                                        <h3>customer_name</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
+                            <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 5,
+                                'category_name' => 'testimonials',
+                            );
+                            $testimonials_query = new WP_Query($args);
+                            ?>
+                            <?php if ($testimonials_query->have_posts()) : ?>
+                                <?php while ($testimonials_query->have_posts()) : ?>
+                                    <?php $testimonials_query->the_post(); ?>
+                                    <div class="swiper-slide">
+                                        <div class="swiper_container4_slide">
+                                            <div class="customer_voice">
+                                                <h3><?php the_title(); ?></h3>
+                                                <?php the_content(); ?>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
 
-                            <div class="swiper-slide">
-                                <div class="swiper_container4_slide">
-                                    <div class="customer_voice">
-                                        <h3>customer_name2</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper_container4_slide">
-                                    <div class="customer_voice">
-                                        <h3>customer_name3</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem,</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- If we need pagination -->
