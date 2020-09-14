@@ -102,7 +102,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 p-0 pr-5 caption">
-                    <h2>MEET OUR<br>EXPERT STYULIStS</h2>
+                    <h2>MEET OUR<br>EXPERT STYLISTS</h2>
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
                         luctus est eget congue. Nam auctor nisi est, nec
                         tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa
@@ -116,34 +116,28 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper d-flex ml-2 justify-content-between ">
                             <!-- Slides -->
+                            <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'category_name' => 'staff',
+                                'posts_per_page' => 3,
+                            );
+                            $staff_query = new WP_Query($args);
+                            ?>
+                            <?php if ($staff_query->have_posts()) : ?>
+                                <?php while ($staff_query->have_posts()) : ?>
+                                    <?php $staff_query->the_post(); ?>
+                                    <div class="swiper-slide flex-column">
+                                        <div>
+                                            <?php the_post_thumbnail(array(194, 235)) ?>
+                                        </div>
+                                        <h3><?php the_title(); ?></h3>
+                                        <p class=""><?php the_content(); ?></p>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
 
-                            <div class="swiper-slide flex-column">
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/stylist1.jpg" alt="">
-                                </div>
-                                <h3>SARA ANDERSON</h3>
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
-                                    luctus est eget congue. Nam auctor nisi est, nec
-                                    tempus lacus viverra nec.</p>
-                            </div>
-                            <div class="swiper-slide flex-column">
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/stylist2.jpg" alt="">
-                                </div>
-                                <h3>SARA ANDERSON</h3>
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
-                                    luctus est eget congue. Nam auctor nisi est, nec
-                                    tempus lacus viverra nec. </p>
-                            </div>
-                            <div class="swiper-slide flex-column">
-                                <div>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/stylist3.jpg" alt="">
-                                </div>
-                                <h3>SARA ANDERSON</h3>
-                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
-                                    luctus est eget congue. Nam auctor nisi est, nec
-                                    tempus lacus viverra nec. </p>
-                            </div>
                             <!-- <div class="swiper-slide"><img
                                         src=""
                                         alt=""></div>

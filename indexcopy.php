@@ -148,7 +148,7 @@
                                 $staff_query = new WP_Query($args);
                                 ?>
                                 <?php if ($staff_query->have_posts()) : ?>
-                                    <?php while ($staff_query->have_posts()) : the_post(); ?>
+                                    <?php while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
                                         <div class="swiper-slide flex-column">
                                             <div>
                                                 <?php the_post_thumbnail(); ?>
