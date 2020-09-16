@@ -29,28 +29,3 @@
     -webkit-align-items: center;
     align-items: center;
 }
-
-.salon_name_box {
-    width: 300px;
-    height: 236px;
-    background-color: white;
-    text-align: left;
-    margin: -128px 0 0 80px;
-    padding: 29px 70px 0;
-}
-
-.big_name {
-    font-size: 70px;
-}
-
-.sentence {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 29px 0 0;
-    margin: 30px 0 0 0;
-}
-
-/* .text { */
-/* margin-right: 0;
-  padding: 0 0 0 150px; */
-/* display: flex; */

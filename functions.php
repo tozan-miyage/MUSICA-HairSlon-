@@ -20,3 +20,9 @@ function my_document_title_separator($separator)
     $separator = "|";
     return $separator;
 }
+
+/**
+ * カスタムメニュー機能を使用可能にする
+ */
+add_theme_support('menus');
+

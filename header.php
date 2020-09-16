@@ -28,3 +28,29 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
+
+    <!-- ヘッダー -->
+    <header>
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navigation_bar">
+                            <p id="MUSICA">MUSICA</p>
+                            <ul class="links">
+                                <li class="link_to_section"><a>THE SALON</a></li>
+                                <li class="link_to_section"><a>MEET OUR TEAM</a></li>
+                                <li class="link_to_section"><a href="#OUR_SERVICES">OUR SERVICES</a></li>
+                                <li class="link_to_section"><a>PORTFOLIO<a></li>
+                                <li class="link_to_section"><a>PROMOTIONS</a></li>
+                                <li class="link_to_section"><a>VIDEO</a></li>
+                                <li class="link_to_section"><a href="<?php echo get_permalink(48); ?>">BLOG</a></li>
+                                <li class="link_to_section"><a>CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ヘッダーend -->
