@@ -400,7 +400,7 @@ textarea {
 }
 
 /*
-index.php css-------------
+index.php, page.php css-------------
 */
 
 .index_header {
@@ -473,5 +473,10 @@ index.php css-------------
 }
 
 .read_more a {
+    color: white;
+}
+
+
+.main_title {
     color: white;
 }
