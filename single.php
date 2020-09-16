@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-9">
                 <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
                         <article id="post-<?php the_ID(); ?>"><?php post_class('article'); ?>>
                             <header class="article_header">
                                 <h2 class="article_title"><?php the_title(); ?></h2>
@@ -20,7 +20,7 @@
                                     <?php the_content(); ?>
                                 </div>
                             </div>
-                            
+
                             <div class="post_links">
                                 <div class="post_link post_link_prev"><?php previous_post_link('<i class="fas fa-chevron-left"></i>%link'); ?></div>
                                 <div class="post_link post_link_next"><?php next_post_link('%link<i class="fas fa-chevron-right"></i>'); ?></div>
