@@ -3,8 +3,8 @@
     <div class="container-fluid p-0">
         <div class="row index_header ">
             <div class="col">
-                <h1 class="index_title"><?php wp_title(); ?></h1>
-                <p class="m-0"><a href="<?php echo home_url(); ?>" class="home_link">&lt; Home</a> </p>
+                <h2 class="index_title"><?php wp_title(); ?></h2>
+                <p class="m-0"><?php get_template_part('template_parts/breadcrumb'); ?></p>
             </div>
         </div>
     </div>

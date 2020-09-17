@@ -406,7 +406,7 @@ index.php, page.php css-------------
 .index_header {
     width: 100%;
     background-color: black;
-    padding: 30px 100px;
+    padding: 40px 100px 30px;
     margin: 0;
 }
 
@@ -478,4 +478,19 @@ index.php, page.php css-------------
 
 .post_links {
     justify-content: space-between;
+}
+
+/*
+--------template_parts
+*/
+
+.breadcrumb {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.breadcrumb_inner a {
+    color: white
 }

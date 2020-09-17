@@ -3,19 +3,20 @@
     <div class="container-fluid p-0">
         <div class="row index_header ">
             <div class="col">
-                <h1 class="index_title"><?php wp_title(); ?></h1>
-                <p class="m-0"><a href="<?php echo home_url(); ?>" class="home_link">&lt; Home</a> </p>
+                <h2 class="index_title"><?php wp_title(); ?></h2>
+                <p class="m-0"><?php get_template_part('template_parts/breadcrumb'); ?></p>
             </div>
         </div>
     </div>
 </section>
+
 <section id="index_content">
     <div class="container">
         <div class="row">
             <div class="col-9">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <article id="post-<?php the_ID(); ?>"<?php post_class('article'); ?>>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
                             <div class="blog_card">
                                 <div class="blog_img">
                                     <?php the_post_thumbnail(array(600, 400)) ?>

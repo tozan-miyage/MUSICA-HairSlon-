@@ -9,7 +9,7 @@
                         <h2 class="index_title"><?php $title = wp_title(''); ?></h2>
                         <p class="index_title">-What&#39;s new-</p>
                     <?php endif; ?>
-                    <p class="m-0"><a href="<?php echo home_url(); ?>" class="home_link">&lt; Home</a></p>
+                    <p class="m-0"><?php get_template_part('template_parts/breadcrumb'); ?></p>
             </div>
         </div>
     </div>
