@@ -174,58 +174,7 @@
                         <div class="col-5 p-0">
                             <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
                                 <?php the_content(); ?>
-                                <!-- <table class="services_menu_table">
-                        <tr>
-                            <th>CUT</th>
-                            <th>WOMEN</th>
-                            <th>MEN</th>
-                        </tr>
-                        <tr>
-                            <td>Stylist</td>
-                            <td>$80</td>
-                            <td>$70</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Stylist</td>
-                            <td>$90</td>
-                            <td>$80</td>
-                        </tr>
-                        <tr>
-                            <td>Master Stylist</td>
-                            <td>$110</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>Celebrity Stylist</td>
-                            <td>$POA</td>
-                            <td>$POA</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                    </table> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -382,7 +331,7 @@
                     </div>
                 </div>
                 <form action="" method="post">
-                    <div class="row">
+                    <div class="row appointment_area">
                         <div class="col-8 appointment_left">
                             <div class="input_caption">
                                 <p>Name</p>
