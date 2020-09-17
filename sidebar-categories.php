@@ -7,7 +7,6 @@
             );
             wp_list_categories($args);
             ?>
-            <!-- <li><a href="#">お知らせ</a></li>
-        <li><a href="#">コラム</a></li> -->
+            
         </ul>
 </aside>

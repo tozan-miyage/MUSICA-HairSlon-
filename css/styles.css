@@ -423,6 +423,8 @@ index.php, page.php css-------------
 .index_title {
     color: white;
     margin: 0;
+    display: inline-block;
+    margin: 0 5px;
 }
 
 .index_title_mini {
@@ -430,8 +432,6 @@ index.php, page.php css-------------
     font-family: sans-serif;
     font-weight: bold;
 }
-
-.article {}
 
 .blog_img {
     width: 600px;
@@ -454,7 +454,7 @@ index.php, page.php css-------------
 }
 
 .archive {
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .read_more {

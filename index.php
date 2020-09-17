@@ -3,8 +3,13 @@
     <div class="container-fluid p-0">
         <div class="row index_header ">
             <div class="col">
-                <h1 class="index_title">What&#39;s new</h1>
-                <p class="m-0"><a href="<?php echo home_url(); ?>" class="home_link">&lt; Home</a></p>
+                <?php if (is_month()) : ?>
+                    <h1 class="index_title"><?php the_time('Y年m月'); ?></h2>
+                    <?php else : ?>
+                        <h2 class="index_title"><?php $title = wp_title(''); ?></h2>
+                        <p class="index_title">-What&#39;s new-</p>
+                    <?php endif; ?>
+                    <p class="m-0"><a href="<?php echo home_url(); ?>" class="home_link">&lt; Home</a></p>
             </div>
         </div>
     </div>
