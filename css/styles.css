@@ -1,402 +1,402 @@
 body {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .navigation_bar {
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
 }
 
 .salon_name_box {
-  width: 300px;
-  height: 236px;
-  background-color: white;
-  text-align: left;
-  margin: -128px 0 0 80px;
-  padding: 29px 70px 0;
+    width: 300px;
+    height: 236px;
+    background-color: white;
+    text-align: left;
+    margin: -128px 0 0 80px;
+    padding: 29px 70px 0;
 }
 
 .big_name {
-  font-size: 70px;
+    font-size: 70px;
 }
 
 .sentence {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding: 29px 0 0;
-  margin: 30px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 29px 0 0;
+    margin: 30px 0 0 0;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
-  text-decoration: none;
-  color: black;
-  opacity: 0.5;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
 }
 
 .links {
-  display: flex;
+    display: flex;
 }
 
 .link_to_section {
-  padding: 0 15px;
-  font-size: 20px;
-  display: inline-block;
-  vertical-align: middle;
+    padding: 0 15px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #MUSICA {
-  font-size: 32px;
-  display: inline-block;
-  padding: 0 15px;
-  margin: 0 auto;
+    font-size: 32px;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 #salon_image {
-  margin: 0 0 50px;
+    margin: 0 0 50px;
 }
 
 .salon_photo_left,
 .salon_photo_right {
-  height: 396px;
-  padding: 0;
-  /* overflow: hidden; */
-  object-fit: cover;
+    height: 396px;
+    padding: 0;
+    /* overflow: hidden; */
+    object-fit: cover;
 }
 
 .salon_photo_right div {
-  height: 190px;
-  padding: 0;
-  overflow: hidden;
+    height: 190px;
+    padding: 0;
+    overflow: hidden;
 }
 
 .salon_photo_left img,
 .salon_photo_right img {
-  width: 100%;
+    width: 100%;
 }
 
 .pt-50 {
-  padding: 59px 0;
+    padding: 59px 0;
 }
 
 h2 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 .flex-column {
-  width: 194px;
-  padding: 0 5px;
-  margin: 5px;
+    width: 194px;
+    padding: 0 5px;
+    margin: 5px;
 }
 
 .flex-column div {
-  width: 194px;
-  height: 224px;
-  overflow: hidden;
+    width: 194px;
+    height: 224px;
+    overflow: hidden;
 }
 
 .flex-column h3 {
-  margin: 10px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .our_services {
-  padding: 0px 0 50px 50%;
+    padding: 0px 0 50px 50%;
 }
 
 .caption {
-  padding: 0 0 0 30px;
-  height: 403px;
-  overflow: hidden;
-  margin: -41px 0 130px;
+    padding: 0 0 0 30px;
+    height: 403px;
+    overflow: hidden;
+    margin: -41px 0 130px;
 }
 
 .caption_photo {
-  /* height: 400px; */
+    /* height: 400px; */
 }
 
 .caption img {
-  width: 100%;
-  height: 600px;
-  margin: 18px 0 0 0;
-  object-fit: cover;
+    width: 100%;
+    height: 600px;
+    margin: 18px 0 0 0;
+    object-fit: cover;
 }
 
 .services_menu_table table {
-  border-style: none;
+    border-style: none;
 }
 
 .services_menu_table th,
 td {
-  padding: 10px 5px 5px 18px;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+    padding: 10px 5px 5px 18px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
 }
 
 .services_menu_table th {
-  font-size: 18px;
-  color: white;
-  background: black;
+    font-size: 18px;
+    color: white;
+    background: black;
 }
 
-.services_menu_table th + th {
-  border-left: solid 1px gainsboro;
+.services_menu_table th+th {
+    border-left: solid 1px gainsboro;
 }
 
-.services_menu_table th + th + th {
-  border-right: solid 1px black;
+.services_menu_table th+th+th {
+    border-right: solid 1px black;
 }
 
 .services_menu_table td {
-  border: solid 1px gainsboro;
+    border: solid 1px gainsboro;
 }
 
 .services_menu_table tr :nth-child(1) {
-  width: 200px;
+    width: 200px;
 }
 
 .services_menu_table tr :nth-child(2) {
-  width: 170px;
+    width: 170px;
 }
 
 .services_menu_table tr :nth-child(3) {
-  width: 130px;
+    width: 130px;
 }
 
 .services_menu_table tr:nth-child(even) {
-  background: #f6f6f6;
+    background: #f6f6f6;
 }
 
 .form_area {
-  padding: 80px 0px 50px 0px;
-  background: black;
-  /* opacity: 0.8; */
-  color: white;
+    padding: 80px 0px 50px 0px;
+    background: black;
+    /* opacity: 0.8; */
+    color: white;
 
-  margin: 0 85px;
-  background-image: ;
+    margin: 0 85px;
+    background-image: ;
 }
 
 .form_area p {
-  margin: 0;
+    margin: 0;
 }
 
 .appointment_left {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .input_caption {
-  padding: 10px 0 0 65px;
+    padding: 10px 0 0 65px;
 }
 
 .appointment_right .input_caption {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 textarea {
-  height: 125px;
+    height: 125px;
 }
 
 .form_submit {
-  margin: 0 0 0 107px;
+    margin: 0 0 0 107px;
 }
 
 .caption_appointment p {
-  padding: 10px 50px;
+    padding: 10px 50px;
 }
 
 .caption_appointment h2 {
-  padding: 0 0 0 50px;
+    padding: 0 0 0 50px;
 }
 
 .expression_image {
-  width: 100%;
-  margin: 70px 0;
-  height: 580px;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    margin: 70px 0;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
 }
 
 .expression_image img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  z-index: -5;
-  position: absolute;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: -5;
+    position: absolute;
 }
 
 .expression_caption {
-  width: 400px;
-  height: 480px;
-  padding: 60px;
-  position: absolute;
-  right: 100px;
-  background: white;
-  z-index: 5;
+    width: 400px;
+    height: 480px;
+    padding: 60px;
+    position: absolute;
+    right: 100px;
+    background: white;
+    z-index: 5;
 }
 
 .promotions_slide {
-  background-color: gray;
-  padding: 80px;
+    background-color: gray;
+    padding: 80px;
 }
 
 .promotions_h2 {
-  /* margin: -30px 0 0 0; */
-  color: white;
-  text-align: center;
+    /* margin: -30px 0 0 0; */
+    color: white;
+    text-align: center;
 }
 
 .expression_caption h3 {
-  padding: 0 0 0 50px;
+    padding: 0 0 0 50px;
 }
 
 .promotions_caption {
-  width: 40%;
-  height: 300px;
-  background: white;
-  text-align: left;
-  padding: 30px;
-  position: relative;
+    width: 40%;
+    height: 300px;
+    background: white;
+    text-align: left;
+    padding: 30px;
+    position: relative;
 }
 
 .promotions_img {
-  width: 60%;
-  height: 300px;
-  overflow: hidden;
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
 }
 
 .promotions_img img {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .swiper_button_area {
-  position: absolute;
-  position: fixed;
-  width: 140px;
-  top: 260px;
-  left: 178px;
+    position: absolute;
+    position: fixed;
+    width: 140px;
+    top: 260px;
+    left: 178px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  width: 60px;
-  height: 62px;
-  background-color: black;
+    width: 60px;
+    height: 62px;
+    background-color: black;
 }
 
 #VIDEO {
-  margin: 80px;
+    margin: 80px;
 }
 
 .video_iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .video_caption {
-  padding: 30px;
+    padding: 30px;
 }
 
 #testmonials {
-  background: whitesmoke;
-  width: 100%;
-  height: 350px;
-  text-align: center;
+    background: whitesmoke;
+    width: 100%;
+    height: 350px;
+    text-align: center;
 }
 
 .swiper_container4_slide {
-  background: whitesmoke;
-  width: 100%;
-  /* padding: 10px; */
+    background: whitesmoke;
+    width: 100%;
+    /* padding: 10px; */
 }
 
 .testmonials_h2 {
-  padding: 40px 40px 20px;
-  margin: 0;
+    padding: 40px 40px 20px;
+    margin: 0;
 }
 
 .customer_voice {
-  width: 500px;
-  background-color: white;
-  padding: 20px;
-  margin: 0 auto;
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 #CONTACT {
-  background: black;
-  height: 500px;
-  color: white;
-  padding: 60px 120px;
+    background: black;
+    height: 500px;
+    color: white;
+    padding: 60px 120px;
 }
 
 #CONTACT h2 {
-  margin: 0 0 30px;
+    margin: 0 0 30px;
 }
 
 .google_map {
-  width: 60%;
-  height: 270px;
-  background-color: #f6f6f9;
+    width: 60%;
+    height: 270px;
+    background-color: #f6f6f9;
 }
 
 .contact_address {
-  width: 40%;
-  height: 270px;
-  background-color: white;
-  padding: 30px;
-  color: black;
+    width: 40%;
+    height: 270px;
+    background-color: white;
+    padding: 30px;
+    color: black;
 }
 
 .contact_top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 .conctact_down {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .contact_caption input {
-  width: 100%;
-  padding: 0;
-  margin: 0 0 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px;
 }
 
 #contact_description {
-  width: 100%;
-  margin: 0 0 10px 0;
+    width: 100%;
+    margin: 0 0 10px 0;
 }
 
 .contact_submit {
-  width: 100%;
+    width: 100%;
 }
 
 .contact_form input,
 textarea {
-  padding: 0 0 0 5px;
+    padding: 0 0 0 5px;
 }
 
 .footer {
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
 .footer p {
-  margin: 0;
+    margin: 0;
 }
 
 /*
@@ -404,72 +404,78 @@ index.php, page.php css-------------
 */
 
 .index_header {
-  width: 100%;
-  background-color: black;
-  padding: 30px 100px;
-  margin: 0;
+    width: 100%;
+    background-color: black;
+    padding: 30px 100px;
+    margin: 0;
 }
 
 .home_link {
-  color: grey;
-  font-family: sans-serif;
-  font-weight: bold;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .home_link:hover {
-  color: white;
+    color: white;
 }
 
 .index_title {
-  color: white;
-  margin: 0;
+    color: white;
+    margin: 0;
 }
 
 .index_title_mini {
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
-.article {
-}
+.article {}
 
 .blog_img {
-  width: 600px;
-  height: 400px;
-  margin: 50px auto;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
 }
 
 .blog_img img {
-  width: 100%;
+    width: 100%;
 }
 
-.article_title {
-}
+.article_title {}
 
 .blog_content {
-  width: 500px;
-  padding: 40px;
-  margin: 0 auto;
-  margin-top: -80px;
-  background: white;
+    width: 500px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: -80px;
+    background: white;
 }
 
 .archive {
-  margin: 50px 0;
+    margin: 50px 0;
 }
 
 .read_more {
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  background: black;
-  padding: 10px;
-  color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background: black;
+    padding: 10px;
+    color: white;
 }
 
 .read_more:hover {
-  background: white;
-  border: 1px solid black;
-  color: black;
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* 
+-----------single.php 
+*/
+
+.post_links {
+    justify-content: space-between;
 }

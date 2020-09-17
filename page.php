@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section id="index_header">
     <div class="container-fluid p-0">
         <div class="row index_header ">
