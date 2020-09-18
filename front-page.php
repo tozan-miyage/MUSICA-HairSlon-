@@ -359,7 +359,7 @@
 
                             </div>
                             <div class="input_caption">
-                                <p>submit</p>
+                                <!-- <p>submit</p> -->
                                 <input type="submit" value="submit" class="form_submit">
                             </div>
                         </div>
