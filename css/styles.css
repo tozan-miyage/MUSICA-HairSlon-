@@ -2,6 +2,9 @@ body {
     font-family: "Yanone Kaffeesatz", serif;
 }
 
+
+
+
 .navigation_bar {
     display: flex;
     justify-content: space-between;
@@ -174,7 +177,7 @@ td {
 }
 
 .form_area {
-    padding: 80px;
+    padding: 80px 100px;
     background: black;
     /* opacity: 0.8; */
     color: white;
@@ -191,14 +194,15 @@ td {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
 }
 
 .input_caption {
-    padding: 10px 0 0 65px;
+    padding: 10px 30px 10px 0;
 }
 
-.appointment_right .input_caption {
-    padding-left: 10px;
+.appointment_right {
+    padding-left: 0px;
 }
 
 textarea {
@@ -208,24 +212,25 @@ textarea {
 
 .appointment_area input {
     width: 200px;
+    /* width: 100%; */
 }
 
 .form_submit {
-    margin: 20px 0 0 10px;
+    width: 100%;
 }
 
 .form_submit:hover {
     background-color: black;
     color: white;
-    border: solid 1px white;
+    border: solid 2px white;
 }
 
 .caption_appointment p {
-    padding: 10px 50px;
+    padding: 10px 0px;
 }
 
 .caption_appointment h2 {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 0px;
 }
 
 .expression_image {
@@ -344,9 +349,9 @@ textarea {
 
 #CONTACT {
     background: black;
-    height: 500px;
+    height: 400px;
     color: white;
-    padding: 60px 120px;
+    padding: 60px 120px 0px;
 }
 
 #CONTACT h2 {
@@ -375,7 +380,7 @@ textarea {
     margin: 0;
 }
 
-.conctact_down {
+.contact_down {
     padding: 0;
     margin: 0;
 }
@@ -384,6 +389,10 @@ textarea {
     width: 100%;
     padding: 0;
     margin: 0 0 20px;
+}
+
+.contact_caption p {
+    margin: 0;
 }
 
 #contact_description {
@@ -401,7 +410,19 @@ textarea {
     border: solid 1px white;
 }
 
+.contact_form_btn {
+    border: solid 1px black;
+    padding: 5px 15px;
+    margin: 5px 0;
+}
 
+.contact_form_btn:hover {
+    border: solid 1px black;
+    padding: 5px 15px;
+    margin: 5px 0;
+    background-color: black;
+    color: white;
+}
 
 .contact_form input,
 textarea {
@@ -409,9 +430,11 @@ textarea {
 }
 
 .footer {
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .footer p {
@@ -489,6 +512,14 @@ index.php, page.php css-------------
     background: white;
     border: 1px solid black;
     color: black;
+}
+
+.article_content {
+    padding: 50px;
+}
+
+.page_php_content {
+    padding: 80px;
 }
 
 /* 

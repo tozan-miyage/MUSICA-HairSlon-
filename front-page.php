@@ -174,7 +174,7 @@
                         <div class="col-5 p-0">
                             <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
                                 <?php the_content(); ?>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -323,7 +323,7 @@
         <div class="form_area">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col p-0">
                         <div class="caption_appointment">
                             <h2>MAKE AN APPOINTMENT</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
@@ -332,7 +332,7 @@
                 </div>
                 <form action="" method="post">
                     <div class="row appointment_area">
-                        <div class="col-8 appointment_left">
+                        <div class="col appointment_left">
                             <div class="input_caption">
                                 <p>Name</p>
                                 <input type="text" id="name" name="name">
@@ -353,16 +353,23 @@
                                 <p>Time</p>
                                 <input type="time" id="time" name="time">
                             </div>
-                        </div>
-                        <div class="col-4 appointment_right">
                             <div class="input_caption">
                                 <p>Description</p>
                                 <textarea id="description" name="description"></textarea>
+
                             </div>
-                            <div>
+                            <div class="input_caption">
+                                <p>submit</p>
                                 <input type="submit" value="submit" class="form_submit">
                             </div>
                         </div>
+                        <!-- <div class="col-4 appointment_right"> -->
+                        <!-- <div class="input_caption">
+                                <p>Description</p>
+                                <textarea id="description" name="description"></textarea>
+                                <input type="submit" value="submit" class="form_submit">
+                            </div> -->
+                        <!-- </div> -->
                     </div>
                 </form>
             </div>
@@ -510,61 +517,9 @@
     </section>
     <!-- testmonials end -->
     <!-- CONTACT -->
-    <section id="CONTACT">
-        <div class="container-fluid">
-            <h2>CONTACT</h2>
-            <div class="row">
-                <div class="col-7 d-flex">
-                    <div class="google_map">
-                    </div>
-                    <div class="contact_address">
-                        <p>okinawa</p>
-                        <p>itoman-nishizaki</p>
-                        <p>Phone 090-9876-5432</p>
-                        <p>Email sample@gmail.co.jp</p>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <form action="" method="post">
-                        <div class="container">
-                            <div class="contact_form">
-                                <div class="row">
-                                    <!-- <div class="col-12 contact_top m-0 p-0 d-flex"> -->
-                                    <div class="contact_caption col-6">
-                                        <input type="text" class="" id="contact_name" name="name" placeholder="Name">
-                                    </div>
-                                    <div class="contact_caption col-6">
-                                        <input type="email" id="contact_email" name="email" placeholder="Email">
-                                    </div>
-                                    <!-- </div> -->
-                                </div>
-                                <div class="row">
-                                    <!-- <div class="col-12 contact_top m-0 p-0"> -->
-                                    <div class="contact_caption col-6">
-                                        <input type="tel" id="contact_tel" name="tel" placeholder="Tel">
-                                    </div>
-                                    <div class="contact_caption col-6">
-                                        <input type="text" id="contact_campany_name" name="campany_name" placeholder="Campany name">
-                                    </div>
-                                    <!-- </div> -->
-                                </div>
-                                <div class="row">
-                                    <!-- <div class="col-12 contact_down m-0 p-0"> -->
-                                    <div class="contact_caption_description col-12">
-                                        <textarea id="contact_description" name="description" placeholder="description"></textarea>
-                                    </div>
-                                    <div class="contact_caption_description col-12">
-                                        <input class="contact_submit" type="submit" value="submit" class="form_submit">
-                                    </div>
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
     <!-- CONTACT end -->
 </main>
 <!-- メインend -->
