@@ -1,17 +1,18 @@
 <footer>
     <section id="CONTACT">
         <div class="container-fluid">
-            <h2>CONTACT</h2>
-            <?php get_template_part('template_parts/contact'); ?>
-        </div>
-    </section>
-
-    <section id="footer">
-        <div class="container-fluid">
             <div class="row">
-                <div class="col footer">
-                    <p>copyright 2020 MUSICA</p>
+                <div class="col">
+                    <?php if (is_home()) : ?> <h2>CONTACT</h2>
+                    <?php endif; ?>
+                    <?php get_template_part('template_parts/contact'); ?>
                 </div>
+            </div>
+    </section>
+    <section id="footer">
+        <div class="row">
+            <div class="col footer">
+                <p>copyright 2020 MUSICA</p>
             </div>
         </div>
     </section>
