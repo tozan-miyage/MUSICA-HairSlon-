@@ -56,16 +56,18 @@
     <!-- salon_image -->
     <section id="salon_image">
         <div class="container">
-            <div class="row pt-50">
-                <div class="col salon_photo_left" data-aos="fade-right">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
-                </div>
-                <div class="col salon_photo_right">
-                    <div class="" data-aos="fade-left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_dresser1risize.jpg" alt="">
+            <div class="row">
+                <div class="salon_image_photo d-flex">
+                    <div class="col-6 salon_photo_left" data-aos="fade-right">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
                     </div>
-                    <div class="" data-aos="fade-left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/Hiar_salon3.jpg" alt="">
+                    <div class="col-6 salon_photo_right">
+                        <div class="right_photos" data-aos="fade-left">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_dresser1risize.jpg" alt="">
+                        </div>
+                        <div class="right_photos" data-aos="fade-left">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/Hiar_salon3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +104,7 @@
                             <?php if ($staff_query->have_posts()) : ?>
                                 <?php while ($staff_query->have_posts()) : ?>
                                     <?php $staff_query->the_post(); ?>
-                                    <div class="swiper-slide flex-column">
+                                    <div class="swiper-slide flex-column staff_info">
                                         <div>
                                             <?php the_post_thumbnail(array(194, 235)) ?>
                                         </div>
