@@ -554,3 +554,30 @@ index.php, page.php css-------------
 .back_home {
     color: orange;
 }
+
+/* 
+----------------comments.php 
+*/
+.comments {
+    margin: 50px 0;
+}
+
+.comments h3 {
+    font-size: 24px;
+}
+
+#comment {
+    width: 100%;
+}
+
+.comments .submit:hover {
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+}
+
+.comments .comment-body p {
+    margin: 20px;
+    padding: 10px;
+    background: whitesmoke;
+}

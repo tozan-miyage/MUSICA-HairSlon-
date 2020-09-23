@@ -40,6 +40,7 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
+                <?php comments_template(); ?>
             </div>
             <div class="col-3">
                 <?php get_sidebar('categories'); ?>

@@ -37,3 +37,15 @@ function remove_body_class($wp_classes)
     }
     return $wp_classes;
 }
+
+/**
+ * コメントフォームの各項目を削除
+ */
+add_filter('comment_form_default_fields', 'my_comment_form_default_fields');
+function my_comment_form_default_fields($args)
+{
+    $args['author'] = '';
+    $args['email'] = '';
+    $args['url'] = '';
+    return $args;
+}
