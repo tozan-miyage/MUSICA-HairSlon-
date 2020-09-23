@@ -147,11 +147,10 @@ td {
 
 .services_menu_table th+th {
     border-left: solid 1px gainsboro;
-}
-
-.services_menu_table th+th+th {
     border-right: solid 1px black;
 }
+
+.services_menu_table th+th+th {}
 
 .services_menu_table td {
     border: solid 1px gainsboro;
@@ -580,4 +579,8 @@ index.php, page.php css-------------
     margin: 20px;
     padding: 10px;
     background: whitesmoke;
+}
+
+.content {
+    margin: 150px 150px 50px;
 }

@@ -251,7 +251,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section id="STYLE">
         <div class="container">
