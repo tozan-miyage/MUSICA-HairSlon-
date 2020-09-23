@@ -45,6 +45,9 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
+                <?php if (function_exists('wp_pagenavi')) {
+                    wp_pagenavi();
+                } ?>
             </div>
             <div class="col-3">
                 <?php get_sidebar('categories'); ?>
