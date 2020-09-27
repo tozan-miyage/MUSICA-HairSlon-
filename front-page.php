@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-4 p-0 pr-5 caption">
                     <h2>MEET OUR<br>EXPERT STYLISTS</h2>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
                         luctus est eget congue. Nam auctor nisi est, nec
                         tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa
                         consequat sem, ut laoreet nisi erat et
@@ -95,8 +95,8 @@
                             <!-- Slides -->
                             <?php
                             $args = array(
-                                'post_type' => 'post',
-                                'category_name' => 'staff',
+                                'post_type' => 'staff',
+                                // 'category_name' => 'staff',
                                 'posts_per_page' => 3,
                             );
                             $staff_query = new WP_Query($args);
@@ -153,171 +153,88 @@
     </section>
     <!-- OUR_SERVICES end -->
 
-    <section id="cutting">
+    <section id="servises">
         <div class="container">
             <?php
             $args = array(
-                'post_type' => 'post',
+                'post_type' => 'service',
                 'post_per_page' => 3,
-                'category_name' => 'service'
             );
             $service_query = new WP_Query($args);
+            $post_index = 0;
             ?>
             <?php if ($service_query->have_posts()) : ?>
                 <?php while ($service_query->have_posts()) : ?>
                     <?php $service_query->the_post(); ?>
-                    <div class="row">
-                        <div class="col-7 p-0 caption">
-                            <h2><?php the_title(); ?></h2>
-                            <div class="caption_photo">
-                                <?php the_post_thumbnail(); ?>
+                    <?php if ($post_index % 2 === 0) : ?>
+                        <div class="row">
+                            <div class="col-7 p-0 caption">
+                                <h2 class="ml-5"><?php the_title(); ?></h2>
+                                <div class="caption_photo">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                            </div>
+                            <div class="col-5 p-0">
+                                <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
+                                    <table>
+                                        <tr>
+                                            <th>menu</th>
+                                            <th>price</th>
+                                        </tr>
+                                        <?php $fields = get_fields(); ?>
+                                        <?php if ($fields) : ?>
+                                            <?php foreach ($fields as $name => $value) : ?>
+                                                <?php if ($value !== "") : ?>
+                                                    <tr>
+                                                        <td><?php echo $name; ?></td>
+                                                        <td><?php echo $value; ?></td>
+                                                    </tr>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-5 p-0">
-                            <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
-                                <?php the_content(); ?>
-
+                        <?php $post_index++ ?>
+                    <?php elseif ($post_index % 2 === 1) : ?>
+                        <div class="row">
+                            <div class="col-5 p-0">
+                                <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
+                                    <table>
+                                        <tr>
+                                            <th>menu</th>
+                                            <th>price</th>
+                                        </tr>
+                                        <?php $fields = get_fields(); ?>
+                                        <?php if ($fields) : ?>
+                                            <?php foreach ($fields as $name => $value) : ?>
+                                                <?php if ($value !== "") : ?>
+                                                    <tr>
+                                                        <td><?php echo $name; ?></td>
+                                                        <td><?php echo $value; ?></td>
+                                                    </tr>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-7 p-0 caption">
+                                <h2 class="ml-5"><?php the_title(); ?></h2>
+                                <div class="caption_photo">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <?php $post_index++ ?>
+                    <?php endif; ?>
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div>
+    </section>
 
-    </section>
-    <section id="color">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 p-0">
-                    <table class="services_menu_table">
-                        <tr>
-                            <th>CUT</th>
-                            <th>WOMEN</th>
-                            <th>MEN</th>
-                        </tr>
-                        <tr>
-                            <td>Stylist</td>
-                            <td>$80</td>
-                            <td>$70</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Stylist</td>
-                            <td>$90</td>
-                            <td>$80</td>
-                        </tr>
-                        <tr>
-                            <td>Master Stylist</td>
-                            <td>$110</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>Celebrity Stylist</td>
-                            <td>$POA</td>
-                            <td>$POA</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-7 p-0 caption ">
-                    <h2 class="pl-5">COLOR</h2>
-                    <div class="caption_photo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_color1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="STYLE">
-        <div class="container">
-            <div class="row">
-                <div class="col-7 p-0 caption">
-                    <h2>STYLE</h2>
-                    <div class="caption_photo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/hair_salon2resize.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-5 p-0">
-                    <table class="services_menu_table">
-                        <tr>
-                            <th>CUT</th>
-                            <th>WOMEN</th>
-                            <th>MEN</th>
-                        </tr>
-                        <tr>
-                            <td>Stylist</td>
-                            <td>$80</td>
-                            <td>$70</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Stylist</td>
-                            <td>$90</td>
-                            <td>$80</td>
-                        </tr>
-                        <tr>
-                            <td>Master Stylist</td>
-                            <td>$110</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>Celebrity Stylist</td>
-                            <td>$POA</td>
-                            <td>$POA</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                        <tr>
-                            <td>Style Menu</td>
-                            <td>$</td>
-                            <td>$</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- OUR_SERVICES end -->
     <!-- APPOINTMENT -->
     <section id="appointment">
@@ -479,9 +396,8 @@
                             <!-- Slides -->
                             <?php
                             $args = array(
-                                'post_type' => 'post',
+                                'post_type' => 'testmonial',
                                 'posts_per_page' => 5,
-                                'category_name' => 'testimonials',
                             );
                             $testimonials_query = new WP_Query($args);
                             ?>

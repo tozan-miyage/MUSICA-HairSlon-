@@ -13,16 +13,16 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-5 p-0">
-                <table class="services_menu_table">
-                    <tr>
-                        <th>menu</th>
-                        <th>price</th>
-                    </tr>
-                    <?php if (have_posts()) : ?>
-                        <?php while (have_posts()) : the_post(); ?>
+            <div class="col-5 p-4">
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <p class=""><?php the_content(); ?></p>
+                        <table class="services_menu_table">
+                            <tr>
+                                <th>menu</th>
+                                <th>price</th>
+                            </tr>
                             <?php $fields = get_fields(); ?>
-
                             <?php if ($fields) : ?>
                                 <?php foreach ($fields as $name => $value) : ?>
                                     <?php if ($value !== "") : ?>
@@ -33,11 +33,11 @@
                                     <?php endif; ?>
                                 <?php endforeach; ?>
                             <?php endif; ?>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
+                        </table>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
 
-                </table>
             </div>
             <div class="col-7 p-0 caption ">
                 <h2 class="pl-5"><?php wp_title(); ?></h2>

@@ -1,383 +1,386 @@
 body {
-    font-family: "Yanone Kaffeesatz", serif, monospace;
-    /* "Roboto Mono" */
+  font-family: "Yanone Kaffeesatz", serif, monospace;
+  /* "Roboto Mono" */
 }
 
 .navigation_bar {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
 }
 
 .salon_name_box {
-    width: 300px;
-    height: 236px;
-    background-color: white;
-    text-align: left;
-    margin: -128px 0 0 80px;
-    padding: 29px 70px 0;
+  width: 300px;
+  height: 236px;
+  background-color: white;
+  text-align: left;
+  margin: -128px 0 0 80px;
+  padding: 29px 70px 0;
 }
 
 .big_name {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 .sentence {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 29px 0 0;
-    margin: 30px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 29px 0 0;
+  margin: 30px 0 0 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
 }
 
 .links {
-    display: flex;
+  display: flex;
 }
 
 .link_to_section {
-    padding: 0 15px;
-    font-size: 20px;
-    display: inline-block;
-    vertical-align: middle;
+  padding: 0 15px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #MUSICA {
-    font-size: 32px;
-    display: inline-block;
-    padding: 0 15px;
-    margin: 0 auto;
+  font-size: 32px;
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 #salon_image {
-    margin: 0 0 50px;
+  margin: 0 0 50px;
 }
 
 .salon_image_photo {
-    width: 100%;
-    height: calc(100% * 0.5);
-    padding: 60px 0;
+  width: 100%;
+  height: calc(100% * 0.5);
+  padding: 60px 0;
 }
 
 .salon_photo_left,
 .salon_photo_right {
-    height: 100%;
-    padding: 0;
+  height: 100%;
+  padding: 0;
 }
 
 .salon_image_photo img {
-    width: 100%;
+  width: 100%;
 }
 
 .right_photos {
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
 }
 
 h2 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .flex-column {
-    width: 194px;
-    padding: 0 5px;
-    margin: 5px;
+  width: 194px;
+  padding: 0 5px;
+  margin: 5px;
 }
 
 .flex-column div {
-    width: 194px;
-    height: 224px;
-    overflow: hidden;
+  width: 194px;
+  height: 224px;
+  overflow: hidden;
 }
 
 .flex-column h3 {
-    margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .our_services {
-    padding: 0px 0 50px 50%;
+  padding: 0px 0 50px 50%;
 }
 
 .caption {
-    padding: 0 0 0 30px;
-    height: 403px;
-    overflow: hidden;
-    margin: -41px 0 130px;
+  padding: 0 0 0 30px;
+  height: 403px;
+  overflow: hidden;
+  margin: -41px 0 130px;
 }
 
 .caption_photo {
-    /* height: 400px; */
+  /* height: 400px; */
 }
 
 .caption img {
-    width: 100%;
-    height: 600px;
-    margin: 18px 0 0 0;
-    object-fit: cover;
+  width: 100%;
+  height: 600px;
+  margin: 18px 0 0 0;
+  object-fit: cover;
 }
 
 .services_menu_table table {
-    border-style: none;
+  border-style: none;
+  width: 100%;
 }
 
 .services_menu_table th,
 td {
-    padding: 10px 5px 5px 18px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+  padding: 10px 5px 5px 18px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
 }
 
 .services_menu_table th {
-    font-size: 18px;
-    color: white;
-    background: black;
+  font-size: 18px;
+  color: white;
+  background: black;
 }
 
-.services_menu_table th+th {
-    border-left: solid 1px gainsboro;
-    border-right: solid 1px black;
+.services_menu_table th + th {
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px black;
 }
 
-.services_menu_table th+th+th {}
+.services_menu_table th + th + th {
+}
 
 .services_menu_table td {
-    border: solid 1px gainsboro;
+  border: solid 1px gainsboro;
 }
 
 .services_menu_table tr :nth-child(1) {
-    width: 200px;
+  width: 50%;
 }
 
 .services_menu_table tr :nth-child(2) {
-    width: 170px;
+  width: 50%;
 }
 
 .services_menu_table tr :nth-child(3) {
-    width: 130px;
+  width: 50%;
 }
 
 .services_menu_table tr:nth-child(even) {
-    background: #f6f6f6;
+  background: #f6f6f6;
 }
 
 .form_area {
-    padding: 80px 180px;
-    background: black;
-    color: white;
-    margin: 0 auto;
-    max-width: 1200px;
+  padding: 80px 180px;
+  background: black;
+  color: white;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .form_area p {
-    margin: 0;
+  margin: 0;
 }
 
 .appointment_left {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
 }
 
 .input_caption {
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 textarea {
-    width: 250px;
-    height: 100px;
+  width: 250px;
+  height: 100px;
 }
 
 .appointment_area input {
-    width: 250px;
+  width: 250px;
 }
 
 .form_submit {
-    /* width: 250px; */
+  /* width: 250px; */
 }
 
 .form_submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 2px white;
+  background-color: black;
+  color: white;
+  border: solid 2px white;
 }
 
 .caption_appointment p {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .caption_appointment h2 {
-    padding: 0 0 0 0px;
+  padding: 0 0 0 0px;
 }
 
 .expression_image {
-    width: 100%;
-    margin: 70px 0;
-    height: 580px;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  margin: 70px 0;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
 }
 
 .expression_image img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: -5;
-    position: absolute;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: -5;
+  position: absolute;
 }
 
 .expression_caption {
-    width: 400px;
-    height: 480px;
-    padding: 60px;
-    position: absolute;
-    right: 100px;
-    background: white;
-    z-index: 5;
+  width: 400px;
+  height: 480px;
+  padding: 60px;
+  position: absolute;
+  right: 100px;
+  background: white;
+  z-index: 5;
 }
 
 .promotions_slide {
-    background-color: gray;
-    padding: 80px;
+  background-color: gray;
+  padding: 80px;
 }
 
 .promotions_h2 {
-    /* margin: -30px 0 0 0; */
-    color: white;
-    text-align: center;
+  /* margin: -30px 0 0 0; */
+  color: white;
+  text-align: center;
 }
 
 .expression_caption h3 {
-    padding: 0 0 0 50px;
+  padding: 0 0 0 50px;
 }
 
 .promotions_caption {
-    width: 40%;
-    height: 300px;
-    background: white;
-    text-align: left;
-    padding: 30px;
-    position: relative;
+  width: 40%;
+  height: 300px;
+  background: white;
+  text-align: left;
+  padding: 30px;
+  position: relative;
 }
 
 .promotions_img {
-    width: 60%;
-    height: 300px;
-    overflow: hidden;
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
 }
 
 .promotions_img img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper_button_area {
-    position: absolute;
-    position: fixed;
-    width: 140px;
-    top: 260px;
-    left: 178px;
+  position: absolute;
+  position: fixed;
+  width: 140px;
+  top: 260px;
+  left: 178px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    width: 60px;
-    height: 62px;
-    background-color: black;
+  width: 60px;
+  height: 62px;
+  background-color: black;
 }
 
 #VIDEO {
-    margin: 80px;
+  margin: 80px;
 }
 
 .video_iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .video_caption {
-    padding: 30px;
+  padding: 30px;
 }
 
 #testmonials {
-    background: whitesmoke;
-    width: 100%;
-    height: 350px;
-    text-align: center;
+  background: whitesmoke;
+  width: 100%;
+  height: 350px;
+  text-align: center;
 }
 
 .swiper_container4_slide {
-    background: whitesmoke;
-    width: 100%;
-    /* padding: 10px; */
+  background: whitesmoke;
+  width: 100%;
+  /* padding: 10px; */
 }
 
 .testmonials_h2 {
-    padding: 40px 40px 20px;
-    margin: 0;
+  padding: 40px 40px 20px;
+  margin: 0;
 }
 
 .customer_voice {
-    width: 500px;
-    background-color: white;
-    padding: 20px;
-    margin: 0 auto;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 #CONTACT {
-    background: black;
-    /* height: 400px; */
-    color: white;
-    padding: 40px 100px 30px;
+  background: black;
+  /* height: 400px; */
+  color: white;
+  padding: 40px 100px 30px;
 }
 
 #CONTACT h2 {
-    margin: 0 0 10px;
-    text-align: left;
+  margin: 0 0 10px;
+  text-align: left;
 }
 
 .google_map {
-    width: 60%;
-    height: 270px;
-    background-color: #f6f6f9;
+  width: 60%;
+  height: 270px;
+  background-color: #f6f6f9;
 }
 
 .contact_address {
-    width: 40%;
-    height: 270px;
-    background-color: white;
-    padding: 50px;
-    color: black;
-    text-align: left;
+  width: 40%;
+  height: 270px;
+  background-color: white;
+  padding: 50px;
+  color: black;
+  text-align: left;
 }
 
 .footer {
-    /* height: 70px; */
-    /* line-height: 70px; */
-    /* text-align: center; */
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
+  /* height: 70px; */
+  /* line-height: 70px; */
+  /* text-align: center; */
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
-.contact_address p {}
+.contact_address p {
+}
 
 /* .contact_top {
     display: flex;
@@ -393,49 +396,49 @@ textarea {
 } */
 
 .contact_caption input {
-    width: 100%;
-    padding: 0;
-    margin: 0 0 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 20px;
 }
 
 .contact_caption p {
-    margin: 0;
+  margin: 0;
 }
 
 #contact_description {
-    width: 100%;
-    margin: 0 0 10px 0;
+  width: 100%;
+  margin: 0 0 10px 0;
 }
 
 .contact_submit {
-    width: 100%;
+  width: 100%;
 }
 
 .contact_submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 1px white;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
 }
 
 .contact_form_btn {
-    border: solid 1px black;
-    padding: 5px 15px;
-    margin: 5px 0;
-    line-height: 100%;
-    text-align: center;
+  border: solid 1px black;
+  padding: 5px 15px;
+  margin: 5px 0;
+  line-height: 100%;
+  text-align: center;
 }
 
 .contact_form_btn:hover {
-    border: solid 1px black;
-    padding: 5px 15px;
-    margin: 5px 0;
-    background-color: black;
-    color: white;
+  border: solid 1px black;
+  padding: 5px 15px;
+  margin: 5px 0;
+  background-color: black;
+  color: white;
 }
 
 .contact_form input,
 textarea {
-    padding: 0 0 0 5px;
+  padding: 0 0 0 5px;
 }
 
 /*
@@ -443,80 +446,81 @@ index.php, page.php css-------------
 */
 
 .index_header {
-    width: 100%;
-    background-color: black;
-    padding: 40px 100px 30px;
-    margin: 0;
+  width: 100%;
+  background-color: black;
+  padding: 40px 100px 30px;
+  margin: 0;
 }
 
 .home_link {
-    color: grey;
-    font-family: sans-serif;
-    font-weight: bold;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .home_link:hover {
-    color: white;
+  color: white;
 }
 
 .index_title {
-    color: white;
-    margin: 0;
-    display: inline-block;
-    margin: 0 5px;
+  color: white;
+  margin: 0;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .index_title_mini {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .blog_img {
-    width: 600px;
-    height: 400px;
-    margin: 50px auto;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
 }
 
 .blog_img img {
-    width: 100%;
+  width: 100%;
 }
 
-.article_title {}
+.article_title {
+}
 
 .blog_content {
-    width: 500px;
-    padding: 40px;
-    margin: 0 auto;
-    margin-top: -80px;
-    background: white;
+  width: 500px;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: -80px;
+  background: white;
 }
 
 .archive {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .read_more {
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    background: black;
-    padding: 10px;
-    color: white;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: black;
+  padding: 10px;
+  color: white;
 }
 
 .read_more:hover {
-    background: white;
-    border: 1px solid black;
-    color: black;
+  background: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .article_content {
-    padding: 50px;
+  padding: 50px;
 }
 
 .page_php_content {
-    padding: 80px;
+  padding: 0px;
 }
 
 /* 
@@ -524,7 +528,7 @@ index.php, page.php css-------------
 */
 
 .post_links {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /*
@@ -532,14 +536,14 @@ index.php, page.php css-------------
 */
 
 .breadcrumb {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0 5px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0 5px;
 }
 
 .breadcrumb_inner a {
-    color: white;
+  color: white;
 }
 
 /*
@@ -547,40 +551,40 @@ index.php, page.php css-------------
 */
 
 .error404 {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 .back_home {
-    color: orange;
+  color: orange;
 }
 
 /* 
 ----------------comments.php 
 */
 .comments {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 .comments h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #comment {
-    width: 100%;
+  width: 100%;
 }
 
 .comments .submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 2px white;
+  background-color: black;
+  color: white;
+  border: solid 2px white;
 }
 
 .comments .comment-body p {
-    margin: 20px;
-    padding: 10px;
-    background: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  background: whitesmoke;
 }
 
 .content {
-    margin: 150px 150px 50px;
+  margin: 150px 0px;
 }
