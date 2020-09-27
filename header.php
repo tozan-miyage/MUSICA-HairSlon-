@@ -42,14 +42,14 @@
                         <nav class="navigation_bar">
                             <p id="MUSICA">MUSICA</p>
                             <ul class="links">
-                                <li class="link_to_section"><a>THE SALON</a></li>
-                                <li class="link_to_section"><a>MEET OUR TEAM</a></li>
+                                <li class="link_to_section"><a href="#the_salon">THE SALON</a></li>
+                                <li class="link_to_section"><a href="#meet_our_team">MEET OUR TEAM</a></li>
                                 <li class="link_to_section"><a href="#OUR_SERVICES">OUR SERVICES</a></li>
-                                <li class="link_to_section"><a>PORTFOLIO<a></li>
-                                <li class="link_to_section"><a>PROMOTIONS</a></li>
-                                <li class="link_to_section"><a>VIDEO</a></li>
+                                <li class="link_to_section"><a href="#promotions">PROMOTIONS</a></li>
+                                <li class="link_to_section"><a href="#VIDEO">VIDEO</a></li>
                                 <li class="link_to_section"><a href="<?php echo get_permalink(48); ?>">BLOG</a></li>
-                                <li class="link_to_section"><a>CONTACT</a></li>
+                                <li class="link_to_section"><a href="#OUR_SERVICES">CONTACT</a></li>
+                                <li class="link_to_section"><a>PORTFOLIO<a></li>
                             </ul>
                         </nav>
                     </div>

@@ -311,7 +311,7 @@
     </section>
     <!-- EXPRESSION OF EXCELLENCE end -->
     <!-- PROMOTIONS AND SPECIALS -->
-    <section id="promotions_and_specials">
+    <section id="promotions">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -324,9 +324,8 @@
                                 <!-- Slides -->
                                 <?php
                                 $args = array(
-                                    'post_type' => 'post',
+                                    'post_type' => 'promotion',
                                     'post_per_page' => '3',
-                                    'category_name' => 'promotion',
                                 );
                                 $promotion_query = new WP_Query($args);
                                 ?>
