@@ -35,39 +35,38 @@
     <section id="the_salon">
         <div class="container">
             <div class="row">
-                <div class="col d-flex">
+                <div class="col-12 col-md-4">
                     <div class="salon_name_box">
-                        <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR<br>SALON<br>MUSICA</a></h1>
-                    </div>
-                    <div class="concept_of_salon">
-                        <p class="sentence"><?php bloginfo('description'); ?><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
-                            luctus est eget congue. Nam auctor nisi est, nec
-                            tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa
-                            consequat sem, ut laoreet nisi erat et
-                            lectus.Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non
-                            congue aliquam, mauris massa
-                            consequat sem, ut laoreet nisi erat et lectus.</p>
+                        <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR SALON MUSICA</a></h1>
                     </div>
                 </div>
+                <div class="col-12 col-md-8 concept_of_salon">
+                    <p class="sentence"><?php bloginfo('description'); ?><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
+                        luctus est eget congue. Nam auctor nisi est, nec
+                        tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa
+                        consequat sem, ut laoreet nisi erat et
+                        lectus.Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non
+                        congue aliquam, mauris massa
+                        consequat sem, ut laoreet nisi erat et lectus.</p>
+                </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- the_salon end -->
     <!-- salon_image -->
     <section id="salon_image">
         <div class="container">
-            <div class="row">
-                <div class="salon_image_photo d-flex">
-                    <div class="col-6 salon_photo_left" data-aos="fade-right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
+            <div class="row salon_image_photo">
+                <div class="col-12 col-lg-6 salon_photo_left" data-aos="fade-right">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 row-cols-sm-1 salon_photo_right">
+                    <div class="right_photos" data-aos="fade-left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_dresser1risize.jpg" alt="">
                     </div>
-                    <div class="col-6 salon_photo_right">
-                        <div class="right_photos" data-aos="fade-left">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_dresser1risize.jpg" alt="">
-                        </div>
-                        <div class="right_photos" data-aos="fade-left">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/Hiar_salon3.jpg" alt="">
-                        </div>
+                    <div class="right_photos" data-aos="fade-left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/Hiar_salon3.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -78,7 +77,7 @@
     <section id="meet_our_team">
         <div class="container">
             <div class="row">
-                <div class="col-4 p-0 pr-5 caption">
+                <div class="col-12 col-lg-4 meet_our_team_caption">
                     <h2>MEET OUR<br>EXPERT STYLISTS</h2>
                     <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
                         luctus est eget congue. Nam auctor nisi est, nec
@@ -88,10 +87,10 @@
                         congue aliquam, mauris massa
                         consequat sem, ut laoreet nisi erat et lectus.</p>
                 </div>
-                <div class="col-8 p-0">
-                    <div class="swiper-container2">
+                <div class="col-12 col-lg-8">
+                    <div class="swiper-container2 container p-0">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper d-flex ml-2 justify-content-between ">
+                        <div class="swiper-wrapper m-0 row">
                             <!-- Slides -->
                             <?php
                             $args = array(
@@ -104,7 +103,7 @@
                             <?php if ($staff_query->have_posts()) : ?>
                                 <?php while ($staff_query->have_posts()) : ?>
                                     <?php $staff_query->the_post(); ?>
-                                    <div class="swiper-slide flex-column staff_info">
+                                    <div class="swiper-slide flex-column staff_info col-12 col-sm-4">
                                         <div>
                                             <?php the_post_thumbnail(array(194, 235)) ?>
                                         </div>
@@ -142,7 +141,7 @@
     <section id="OUR_SERVICES">
         <div class="container">
             <div class="row">
-                <div class="col our_services">
+                <div class="col our_services_caption">
                     <h2>OUR SERVICES</h2>
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
                         luctus est eget congue. Nam auctor nisi est, nec
@@ -166,73 +165,38 @@
             <?php if ($service_query->have_posts()) : ?>
                 <?php while ($service_query->have_posts()) : ?>
                     <?php $service_query->the_post(); ?>
-                    <?php if ($post_index % 2 === 0) : ?>
-                        <div class="row">
-                            <div class="col-7 p-0 caption">
-                                <h2 class="ml-5"><?php the_title(); ?></h2>
-                                <div class="caption_photo">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            </div>
-                            <div class="col-5 p-0">
-                                <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
-                                    <table>
-                                        <tr>
-                                            <th>menu</th>
-                                            <th>price</th>
-                                        </tr>
-                                        <?php $fields = get_fields(); ?>
-                                        <?php if ($fields) : ?>
-                                            <?php foreach ($fields as $name => $value) : ?>
-                                                <?php if ($value !== "") : ?>
-                                                    <tr>
-                                                        <td><?php echo $name; ?></td>
-                                                        <td><?php echo $value; ?></td>
-                                                    </tr>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
-                                        <?php endif; ?>
-                                    </table>
-                                </div>
+                    <div class="row service_row">
+                        <div class="col-12 col-md-7 p-0 service_caption">
+                            <h2 class="ml-5"><?php the_title(); ?></h2>
+                            <div class="caption_photo">
+                                <?php the_post_thumbnail(); ?>
                             </div>
                         </div>
-                        <?php $post_index++ ?>
-                    <?php elseif ($post_index % 2 === 1) : ?>
-                        <div class="row">
-                            <div class="col-5 p-0">
-                                <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
-                                    <table>
-                                        <tr>
-                                            <th>menu</th>
-                                            <th>price</th>
-                                        </tr>
-                                        <?php $fields = get_fields(); ?>
-                                        <?php if ($fields) : ?>
-                                            <?php foreach ($fields as $name => $value) : ?>
-                                                <?php if ($value !== "") : ?>
-                                                    <tr>
-                                                        <td><?php echo $name; ?></td>
-                                                        <td><?php echo $value; ?></td>
-                                                    </tr>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
-                                        <?php endif; ?>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-7 p-0 caption">
-                                <h2 class="ml-5"><?php the_title(); ?></h2>
-                                <div class="caption_photo">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
+                        <div class="col-12 col-md-5 p-0">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class('services_menu_table'); ?>>
+                                <table>
+                                    <tr>
+                                        <th>menu</th>
+                                        <th>price</th>
+                                    </tr>
+                                    <?php $fields = get_fields(); ?>
+                                    <?php if ($fields) : ?>
+                                        <?php foreach ($fields as $name => $value) : ?>
+                                            <?php if ($value !== "") : ?>
+                                                <tr>
+                                                    <td><?php echo $name; ?></td>
+                                                    <td><?php echo $value; ?></td>
+                                                </tr>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </table>
                             </div>
                         </div>
-                        <?php $post_index++ ?>
-                    <?php endif; ?>
+                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
-        </div>
     </section>
 
     <!-- OUR_SERVICES end -->
@@ -297,14 +261,13 @@
     <!-- EXPRESSION OF EXCELLENCE -->
     <section id="expression_of_excellence">
         <div class="container-field">
-            <div class="row">
+            <div class="row m-0">
                 <div class="col p-0 expression_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/hair_style2copy.jpg" alt="">
                     <div class="expression_caption">
                         <h2>EXPRESSION OF<br>EXCELLENCE</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
-
                     </div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/hair_style2copy.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -320,7 +283,7 @@
                         <!-- Slider main container -->
                         <div class="swiper-container3">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper container">
                                 <!-- Slides -->
                                 <?php
                                 $args = array(
@@ -332,8 +295,8 @@
                                 <?php if ($promotion_query->have_posts()) : ?>
                                     <?php while ($promotion_query->have_posts()) : ?>
                                         <?php $promotion_query->the_post(); ?>
-                                        <div class="swiper-slide">
-                                            <div class="promotions_caption">
+                                        <div class="swiper-slide row">
+                                            <div class="promotions_caption col-12 col-md-5">
                                                 <h3>
                                                     <?php the_title(); ?>
                                                 </h3>
@@ -344,7 +307,7 @@
                                                     <div class="swiper-button-next"></div>
                                                 </div>
                                             </div>
-                                            <div class="promotions_img">
+                                            <div class="promotions_img col-12 col-md-7 p-0">
                                                 <?php the_post_thumbnail(array(500, 300)); ?>
                                             </div>
                                         </div>
@@ -352,7 +315,6 @@
                                 <?php endif; ?>
                                 <?php wp_reset_postdata(); ?>
                                 <!-- Slides -->
-
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
@@ -363,23 +325,23 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!-- PROMOTIONS AND SPECIALS end-->
     <!-- video -->
     <section id="VIDEO">
         <div class="container">
-            <div class="row">
-                <div class="col-8 video_iframe">
+            <div class="row video_row">
+                <div class="col-12 col-md-8 video_iframe">
                     <iframe width="100%" height="410px" src="https://www.youtube.com/embed/vZHf3ZVJhUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-4">
-                    <div class="video_caption">
-                        <h2>SHOWREEL</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
-                    </div>
+                <div class="col-12 col-md-4 video_caption">
+                    <!-- <div class="video_caption"> -->
+                    <h2>SHOWREEL</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
+                    <!-- </div> -->
                 </div>
             </div>
+        </div>
     </section>
     <!-- video end -->
     <!-- testmonials -->
@@ -404,11 +366,9 @@
                                 <?php while ($testimonials_query->have_posts()) : ?>
                                     <?php $testimonials_query->the_post(); ?>
                                     <div class="swiper-slide">
-                                        <div class="swiper_container4_slide">
-                                            <div class="customer_voice">
-                                                <h3><?php the_title(); ?></h3>
-                                                <?php the_content(); ?>
-                                            </div>
+                                        <div class="customer_voice">
+                                            <h3><?php the_title(); ?></h3>
+                                            <?php the_content(); ?>
                                         </div>
                                     </div>
                                 <?php endwhile; ?>
@@ -435,9 +395,9 @@
     <!-- CONTACT -->
 
 
-
     <!-- CONTACT end -->
 </main>
 <!-- メインend -->
+
 
 <?php get_footer(); ?>

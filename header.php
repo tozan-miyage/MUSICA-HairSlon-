@@ -23,6 +23,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
     <!-- <title>MUSICA</title> -->
     <?php
     wp_enqueue_script('jquery');
@@ -39,19 +40,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <nav class="navigation_bar">
-                            <p id="MUSICA">MUSICA</p>
-                            <ul class="links">
-                                <li class="link_to_section"><a href="#the_salon">THE SALON</a></li>
-                                <li class="link_to_section"><a href="#meet_our_team">MEET OUR TEAM</a></li>
-                                <li class="link_to_section"><a href="#OUR_SERVICES">OUR SERVICES</a></li>
-                                <li class="link_to_section"><a href="#promotions">PROMOTIONS</a></li>
-                                <li class="link_to_section"><a href="#VIDEO">VIDEO</a></li>
-                                <li class="link_to_section"><a href="<?php echo get_permalink(48); ?>">BLOG</a></li>
-                                <li class="link_to_section"><a href="#OUR_SERVICES">CONTACT</a></li>
-                                <li class="link_to_section"><a>PORTFOLIO<a></li>
-                            </ul>
-                        </nav>
+                        <?php get_template_part('template_parts/navbar'); ?>
                     </div>
                 </div>
             </div>

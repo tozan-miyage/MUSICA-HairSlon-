@@ -1,0 +1,95 @@
+@media(max-width:768px) {
+    .salon_name_box {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .big_name {
+        font-size: 3rem;
+
+    }
+
+    .caption {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .our_services_caption {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .caption_photo {
+        display: none;
+    }
+
+    #servises .container .service_row:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .expression_image {
+        width: 100%;
+        margin: 50px 0;
+        /* height: 580px; */
+        /* overflow: hidden; */
+        /* position: relative; */
+    }
+
+    .expression_image img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        /* z-index: -5; */
+        position: static;
+    }
+
+    .expression_caption {
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+        position: static;
+        /* right: 9.4%; */
+        background: white;
+        /* z-index: 5; */
+
+    }
+
+    .promotions_slide {
+        padding: 20px;
+    }
+
+    .promotions_caption {
+        height: auto;
+    }
+
+    .swiper_button_area {
+        display: none;
+    }
+
+    .video_row {
+        flex-direction: column-reverse;
+    }
+
+    .video_caption {
+        padding: 10px;
+        /* width: 100%; */
+    }
+
+    /* .video_caption p {
+        width: 100%;
+    } */
+}
+
+@media(max-width:576px) {
+    .salon_image_photo {
+        display: block;
+    }
+
+    .form_area {
+        padding: 50px 30px;
+    }
+
+
+
+}

@@ -11,7 +11,7 @@
         </section>
         <section id="footer">
             <div class="row">
-                <div class="col ">
+                <div class="col">
                     <p>copyright 2020 MUSICA</p>
                 </div>
             </div>
