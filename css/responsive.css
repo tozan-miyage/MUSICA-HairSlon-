@@ -1,12 +1,32 @@
 @media(max-width:768px) {
     .salon_name_box {
         margin: 0;
-        padding: 20px;
+        padding: 20px 10px 10px 0;
+        width: auto;
+        height: auto;
     }
+
 
     .big_name {
         font-size: 3rem;
+        margin: 0 auto;
+        text-align: left;
+    }
 
+    .sentence {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #salon_image {
+        margin: 20px 0;
+    }
+
+    .salon_image_photo {
+        /* width: 100%; */
+        height: calc(100% * 0.5);
+        padding: 0px 0;
     }
 
     .caption {
@@ -15,9 +35,14 @@
         height: auto;
     }
 
+    .meet_our_team_caption {
+        /* overflow: hidden; */
+        margin: 0;
+    }
+
     .our_services_caption {
-        padding: 0;
-        margin-bottom: 50px;
+        padding: 0 20px;
+        margin-bottom: 30px;
     }
 
     .caption_photo {
@@ -28,30 +53,9 @@
         flex-direction: row;
     }
 
-    .expression_image {
-        width: 100%;
-        margin: 50px 0;
-        /* height: 580px; */
-        /* overflow: hidden; */
-        /* position: relative; */
-    }
-
-    .expression_image img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        /* z-index: -5; */
-        position: static;
-    }
-
     .expression_caption {
-        width: 100%;
-        height: auto;
-        padding: 10px 30px;
-        position: static;
-        /* right: 9.4%; */
-        background: white;
-        /* z-index: 5; */
+        /* width: 400px; */
+        padding: 30px;
 
     }
 
@@ -76,9 +80,9 @@
         /* width: 100%; */
     }
 
-    /* .video_caption p {
-        width: 100%;
-    } */
+    .google_map {
+        height: 300px;
+    }
 }
 
 @media(max-width:576px) {
@@ -90,6 +94,28 @@
         padding: 50px 30px;
     }
 
+    .expression {
+        padding: 50px 0;
+    }
 
+    .expression_image {
+        width: 100%;
+        position: static;
+    }
+
+    .expression_image img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .expression_caption {
+        /* width: 400px; */
+        padding: 0 60px 30px;
+        position: static;
+
+        background: white;
+
+    }
 
 }

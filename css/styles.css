@@ -251,32 +251,31 @@ textarea {
     padding: 0 0 0 0px;
 }
 
+.expression {
+    padding: 100px 0;
+    position: relative;
+}
+
+.expression_caption {
+    width: 400px;
+    padding: 60px;
+    position: absolute;
+    right: 9.4%;
+    background: white;
+    z-index: 5;
+}
+
 .expression_image {
     width: 100%;
-    margin: 70px 0;
-    /* height: 580px; */
-    /* overflow: hidden; */
-    position: relative;
+    /* position: relative; */
 }
 
 .expression_image img {
     width: 100%;
     object-fit: cover;
     display: block;
-    /* z-index: -5; */
-    /* position: absolute; */
 }
 
-.expression_caption {
-    width: 400px;
-    height: 480px;
-    padding: 60px;
-    position: absolute;
-    right: 9.4%;
-    background: white;
-    z-index: 5;
-
-}
 
 .promotions_slide {
     background-color: gray;
@@ -344,15 +343,11 @@ textarea {
 #testmonials {
     background: whitesmoke;
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     text-align: center;
+    padding-bottom: 30px;
 }
 
-.swiper_container4_slide {
-    background: whitesmoke;
-    width: 100%;
-    /* padding: 10px; */
-}
 
 .testmonials_h2 {
     padding: 40px 40px 20px;
@@ -381,13 +376,13 @@ textarea {
 
 .google_map {
     width: 60%;
-    height: 270px;
+    /* height: 270px; */
     background-color: #f6f6f9;
 }
 
 .contact_address {
     width: 40%;
-    height: 270px;
+    /* height: 270px; */
     background-color: white;
     padding: 50px;
     color: black;

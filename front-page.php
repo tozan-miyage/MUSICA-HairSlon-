@@ -261,12 +261,12 @@
     <!-- EXPRESSION OF EXCELLENCE -->
     <section id="expression_of_excellence">
         <div class="container-field">
-            <div class="row m-0">
-                <div class="col p-0 expression_image">
-                    <div class="expression_caption">
-                        <h2>EXPRESSION OF<br>EXCELLENCE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
-                    </div>
+            <div class="row m-0 expression">
+                <div class="col-12 expression_caption">
+                    <h2>EXPRESSION OF<br>EXCELLENCE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
+                </div>
+                <div class="col-12 p-0 expression_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/hair_style2copy.jpg" alt="">
                 </div>
             </div>
