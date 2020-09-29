@@ -34,10 +34,12 @@
     <?php wp_body_open(); ?>
 
     <!-- ヘッダー -->
-    <header>
+    <header id="header">
         <section id="navigation">
 
+
             <?php get_template_part('template_parts/navbar'); ?>
+
 
         </section>
     </header>

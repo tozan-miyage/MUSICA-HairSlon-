@@ -1,39 +1,36 @@
 body {
     font-family: "Yanone Kaffeesatz", serif, monospace;
+    margin-top: 60px;
     /* "Roboto Mono" */
 }
 
+#header {
+    /* height: 0px; */
+}
+
 /* --------------navbar--------------------- */
-#navigation .navbar {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    height: 60px;
-    line-height: 60px;
+.navbar {
+    /* position:fixed; */
 }
 
 .navbar-brand {
     font-size: 2rem;
-    /* display: block; */
+    margin-left: 7%;
 }
 
-.navbar-toggler {
-    /* display: block; */
-    /* text-align: right; */
+.navbar-nav {
+    display: flex;
 }
 
 .navbar-collapse {
     text-align: right;
 }
 
-#navbarNav .navbar-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.links {}
+.collapse {}
 
 .link_to_section {
     font-size: 1.4rem;
+    padding: 0 5px;
 }
 
 /* --------------navbar end--------------------- */
@@ -43,7 +40,7 @@ body {
     background-color: white;
     text-align: left;
     margin: -128px 0 0 0px;
-    padding: 29px 70px 0;
+    padding: 4% 7%;
 }
 
 .big_name {
@@ -243,7 +240,7 @@ textarea {
     border: solid 2px white;
 }
 
-.caption_appointment{
+.caption_appointment {
     padding: 50px;
 }
 
