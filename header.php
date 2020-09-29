@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
     <!-- <title>MUSICA</title> -->
     <?php
-    wp_enqueue_script('jquery');
     wp_head(); ?>
 
 </head>
@@ -37,13 +36,9 @@
     <!-- ヘッダー -->
     <header>
         <section id="navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <?php get_template_part('template_parts/navbar'); ?>
-                    </div>
-                </div>
-            </div>
+
+            <?php get_template_part('template_parts/navbar'); ?>
+
         </section>
     </header>
     <!-- ヘッダーend -->

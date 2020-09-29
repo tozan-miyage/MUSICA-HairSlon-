@@ -243,12 +243,12 @@ textarea {
     border: solid 2px white;
 }
 
-.caption_appointment p {
-    padding: 10px 0px;
+.caption_appointment{
+    padding: 50px;
 }
 
 .caption_appointment h2 {
-    padding: 0 0 0 0px;
+    /* padding: 0 0 0 0px; */
 }
 
 .expression {

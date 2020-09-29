@@ -35,10 +35,8 @@
     <section id="the_salon">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="salon_name_box">
-                        <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR SALON MUSICA</a></h1>
-                    </div>
+                <div class="col-12 col-md-4 salon_name_box">
+                    <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR SALON MUSICA</a></h1>
                 </div>
                 <div class="col-12 col-md-8 concept_of_salon">
                     <p class="sentence"><?php bloginfo('description'); ?><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
@@ -205,11 +203,9 @@
         <div class="form_area">
             <div class="container">
                 <div class="row">
-                    <div class="col p-0">
-                        <div class="caption_appointment">
-                            <h2>MAKE AN APPOINTMENT</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
-                        </div>
+                    <div class="col caption_appointment">
+                        <h2>MAKE AN APPOINTMENT</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
                     </div>
                 </div>
                 <form action="" method="post">
@@ -261,12 +257,12 @@
     <!-- EXPRESSION OF EXCELLENCE -->
     <section id="expression_of_excellence">
         <div class="container-field">
-            <div class="row m-0 expression">
+            <div class="row expression">
                 <div class="col-12 expression_caption">
                     <h2>EXPRESSION OF<br>EXCELLENCE</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, </p>
                 </div>
-                <div class="col-12 p-0 expression_image">
+                <div class="col-12 expression_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/hair_style2copy.jpg" alt="">
                 </div>
             </div>

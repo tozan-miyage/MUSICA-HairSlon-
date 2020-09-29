@@ -1,9 +1,13 @@
 @media(max-width:768px) {
     .salon_name_box {
         margin: 0;
-        padding: 20px 10px 10px 0;
+        padding: 30px 20px;
         width: auto;
         height: auto;
+    }
+
+    .concept_of_salon {
+        padding: 0px 20px;
     }
 
 
@@ -95,11 +99,12 @@
     }
 
     .expression {
-        padding: 50px 0;
+        padding: 20px 0;
+        margin: 10px;
     }
 
     .expression_image {
-        width: 100%;
+        width: 100vw;
         position: static;
     }
 
@@ -116,6 +121,14 @@
 
         background: white;
 
+    }
+
+    .caption_appointment {
+        padding: 10px;
+    }
+
+    .expression_caption {
+        padding: 30px;
     }
 
 }
