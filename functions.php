@@ -49,3 +49,13 @@ function my_comment_form_default_fields($args)
     $args['url'] = '';
     return $args;
 }
+
+/**
+ * カスタムメニューaタグにクラス名を追加する
+ */
+
+function add_menuclass($ulclass)
+{
+    return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+}
+add_filter('wp_nav_menu', 'add_menuclass');
