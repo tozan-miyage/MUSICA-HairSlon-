@@ -199,7 +199,7 @@ td {
 }
 
 .form_area {
-    padding: 80px 180px;
+    padding: 50px;
     background: black;
     color: white;
     margin: 0 auto;
@@ -241,11 +241,32 @@ textarea {
 }
 
 .caption_appointment {
-    padding: 50px;
+    padding: 0px;
 }
 
 .caption_appointment h2 {
     /* padding: 0 0 0 0px; */
+}
+
+.appointment_btn {
+    border: solid 1px white;
+    color: white;
+    height: 30px;
+    padding: 5px 15px;
+    margin: 5px 0;
+    line-height: 100%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.appointment_btn:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.9;
+}
+
+.appointment_btn p {
+    /* line-height: 100%; */
 }
 
 .expression {
@@ -275,18 +296,18 @@ textarea {
 
 
 .promotions_slide {
-    background-color: gray;
-    padding: 80px;
+    background-color: whitesmoke;
+    padding: 50px 80px 80px;
 }
 
 .promotions_h2 {
-    /* margin: -30px 0 0 0; */
-    color: white;
+    color: black;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .expression_caption h3 {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 0px;
 }
 
 .promotions_caption {

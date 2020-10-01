@@ -204,54 +204,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col caption_appointment">
-                        <h2>MAKE AN APPOINTMENT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
+                        <h2 class="ml-3">MAKE AN APPOINTMENT</h2>
+                        <p class="ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec.</p>
                     </div>
                 </div>
-                <form action="" method="post">
-                    <div class="row appointment_area">
-                        <div class="col appointment_left">
-                            <div class="input_caption">
-                                <p>Name</p>
-                                <input type="text" id="name" name="name">
-                            </div>
-                            <div class="input_caption">
-                                <p>Email</p>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="input_caption">
-                                <p>Phone number</p>
-                                <input type="tel" id="tel" name="tel">
-                            </div>
-                            <div class="input_caption">
-                                <p>Date</p>
-                                <input type="date" id="date" name="date">
-                            </div class="input_caption">
-                            <div class="input_caption">
-                                <p>Time</p>
-                                <input type="time" id="time" name="time">
-                            </div>
-                            <div class="input_caption">
-                                <p>Description</p>
-                                <textarea id="description" name="description"></textarea>
 
-                            </div>
-                            <div class="input_caption">
-                                <!-- <p>submit</p> -->
-                                <input type="submit" value="submit" class="form_submit">
-                            </div>
-                        </div>
-                        <!-- <div class="col-4 appointment_right"> -->
-                        <!-- <div class="input_caption">
-                                <p>Description</p>
-                                <textarea id="description" name="description"></textarea>
-                                <input type="submit" value="submit" class="form_submit">
-                            </div> -->
-                        <!-- </div> -->
+                <a href="<?php echo get_page_link(143); ?>" class="">
+                    <div class="appointment_btn mt-3">
+                        <p class="">ご予約はコチラから</p>
                     </div>
-                </form>
+                </a>
+
             </div>
-        </div>
     </section>
     <!-- APPOINTMENT end -->
     <!-- EXPRESSION OF EXCELLENCE -->
@@ -271,7 +235,7 @@
     <!-- EXPRESSION OF EXCELLENCE end -->
     <!-- PROMOTIONS AND SPECIALS -->
     <section id="promotions">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <div class="promotions_slide">

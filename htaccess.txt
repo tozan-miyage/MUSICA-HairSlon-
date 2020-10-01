@@ -1,4 +1,4 @@
-SetEnvIf Host "^https://hair-salon.tozan-miyage.com$" host
+SetEnvIf Host "^hair-salon.tozan-miyage.com$" host
 order deny,allow
 deny from all
 allow from env=host
