@@ -17,36 +17,32 @@
 <section id="index_content">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-9 id=" post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
-                            <div class="blog_card">
-                                <div class="blog_img">
-                                    <?php the_post_thumbnail(array(600, 400)) ?>
-                                </div>
-                                <div class="salon_name_box">
-                                    <h2 class="article_title"><?php the_title(); ?>bbb</h2>
-                                </div>
-                                <div class="blog_content">
-                                    <div class="d-flex">
-                                        <p class="mr-2"> <?php the_modified_date(); ?> </p>
-                                        <span class="mr-1">|</span>
-                                        <p class="mr-2"> <?php the_category(); ?> </p>
-                                    </div>
-                                    <hr>
-                                    <p class=""><?php the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink(); ?>">
-                                        <div id="a_tag" class="read_more">
-                                            <p class="read_more_p">READ MORE</p>
-                                        </div>
-                                    </a>
-                                </div>
+
+                        <div class="blog_img">
+                            <?php the_post_thumbnail(array(600, 400)); ?>
+                        </div>
+                        <div class="blog_content">
+                            <h2 class="article_title"><?php the_title(); ?>bbb</h2>
+                            <div class="d-flex">
+                                <p class="blog_date"> <?php the_modified_date(); ?> </p>
+                                <span class="blog_">|</span>
+                                <p class="blog_category"> <?php the_category(); ?> </p>
                             </div>
-                        </article>
+                            <hr>
+                            <p class=""><?php the_excerpt(); ?></p>
+                            <a href="<?php the_permalink(); ?>">
+                                <div id="a_tag" class="read_more">
+                                    <p class="read_more_p">READ MORE</p>
+                                </div>
+                            </a>
+                        </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
+
                 <?php if (function_exists('wp_pagenavi')) {
                     wp_pagenavi();
                 } ?>
