@@ -17,7 +17,7 @@
 <section id="index_content">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-lg-9">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
@@ -49,7 +49,7 @@
                     wp_pagenavi();
                 } ?>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-3">
                 <?php get_sidebar('categories'); ?>
                 <?php get_sidebar('archives'); ?>
             </div>

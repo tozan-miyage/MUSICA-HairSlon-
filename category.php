@@ -3,13 +3,17 @@
     <div class="container-fluid p-0">
         <div class="row index_header ">
             <div class="col">
-                <h2 class="index_title"><?php wp_title(); ?></h2>
-                <p class="m-0"><?php get_template_part('template_parts/breadcrumb'); ?></p>
+                <?php if (is_month()) : ?>
+                    <h1 class="index_title"><?php the_time('Y年m月'); ?></h2>
+                    <?php else : ?>
+                        <h2 class="index_title"><?php $title = wp_title(''); ?></h2>
+                        <p class="index_title">-What&#39;s new-</p>
+                    <?php endif; ?>
+                    <p class="m-0"><?php get_template_part('template_parts/breadcrumb'); ?></p>
             </div>
         </div>
     </div>
 </section>
-
 <section id="index_content">
     <div class="container">
         <div class="row">
@@ -21,26 +25,31 @@
                                 <div class="blog_img">
                                     <?php the_post_thumbnail(array(600, 400)) ?>
                                 </div>
+                                <div class="salon_name_box">
+                                    <h2 class="article_title"><?php the_title(); ?>bbb</h2>
+                                </div>
                                 <div class="blog_content">
-                                    <h2 class="article_title"><?php the_title(); ?></h2>
                                     <div class="d-flex">
                                         <p class="mr-2"> <?php the_modified_date(); ?> </p>
                                         <span class="mr-1">|</span>
                                         <p class="mr-2"> <?php the_category(); ?> </p>
                                     </div>
                                     <hr>
-                                    <p><?php the_content(); ?></p>
+                                    <p class=""><?php the_excerpt(); ?></p>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div id="a_tag" class="read_more">
+                                            <p class="read_more_p">READ MORE</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </article>
-                        <div class="post_links d-flex">
-                            <div class="post_link post_link_prev"><?php previous_post_link('<i class="fas fa-chevron-left"></i>%link'); ?></div>
-                            <div class="post_link post_link_next"><?php next_post_link('%link<i class="fas fa-chevron-right"></i>'); ?></div>
-                        </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
-                <?php comments_template(); ?>
+                <?php if (function_exists('wp_pagenavi')) {
+                    wp_pagenavi();
+                } ?>
             </div>
             <div class="col-12 col-lg-3">
                 <?php get_sidebar('categories'); ?>

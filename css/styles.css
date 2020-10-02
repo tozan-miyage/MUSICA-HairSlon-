@@ -516,24 +516,32 @@ index.php, page.php css-------------
     font-weight: bold;
 }
 
+.blog_card {
+    position: relative;
+}
+
 .blog_img {
-    width: 600px;
-    height: 400px;
+    width: 80%;
+    /* height: calc(100vw * 0.8 * 0.66); */
     margin: 50px auto;
+    overflow: hidden;
+    /* position: absolute; */
+    /* z-index: -1; */
 }
 
 .blog_img img {
     width: 100%;
+    object-fit: cover;
 }
 
-.article_title {}
-
 .blog_content {
-    width: 500px;
+    width: 75%;
     padding: 40px;
     margin: 0 auto;
     margin-top: -80px;
     background: white;
+    /* position: absolute; */
+    /* z-index: 5; */
 }
 
 .archive {
