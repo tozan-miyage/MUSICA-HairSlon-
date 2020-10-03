@@ -517,16 +517,14 @@ index.php, page.php css-------------
 }
 
 .blog_card {
-    position: relative;
+    /* position: relative; */
+    /* margin-top: -50px; */
 }
 
 .blog_img {
     width: 80%;
-    /* height: calc(100vw * 0.8 * 0.66); */
     margin: 50px auto;
     overflow: hidden;
-    /* position: absolute; */
-    /* z-index: -1; */
 }
 
 .blog_img img {
@@ -538,10 +536,8 @@ index.php, page.php css-------------
     width: 75%;
     padding: 40px;
     margin: 0 auto;
-    margin-top: -80px;
+    margin-top: -70px;
     background: white;
-    /* position: absolute; */
-    /* z-index: 5; */
 }
 
 .archive {
