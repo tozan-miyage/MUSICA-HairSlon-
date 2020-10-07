@@ -1,3 +1,9 @@
+@media(max-width:1000px) {
+    .salon_image_photo {
+        padding: 40px 0;
+    }
+}
+
 @media(max-width:768px) {
     .salon_name_box {
         margin: 0;

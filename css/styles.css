@@ -1,427 +1,434 @@
 body {
-    font-family: "Yanone Kaffeesatz", serif, monospace;
-    margin-top: 60px;
-    /* "Roboto Mono" */
+  font-family: "Yanone Kaffeesatz", serif, monospace;
+  margin-top: 60px;
+  /* "Roboto Mono" */
 }
 
 #header {
-    /* height: 0px; */
+  /* height: 0px; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.post-categories {
+  padding-left: 10px;
 }
 
 /* --------------navbar--------------------- */
 .navbar {
-    /* position:fixed; */
+  /* position:fixed; */
 }
 
 .navbar-brand {
-    font-size: 2rem;
-    margin-left: 7%;
+  font-size: 2rem;
+  margin-left: 7%;
 }
 
 .navbar-nav {
-    display: flex;
+  display: flex;
 }
 
 .navbar-collapse {
-    text-align: right;
+  text-align: right;
 }
 
-.collapse {}
+.collapse {
+}
 
 .link_to_section {
-    font-size: 1.4rem;
-    padding: 0 5px;
+  font-size: 1.4rem;
+  padding: 0 5px;
 }
 
 /* --------------navbar end--------------------- */
 .salon_name_box {
-    width: 300px;
-    height: 236px;
-    background-color: white;
-    text-align: left;
-    margin: -128px 0 0 0px;
-    padding: 4% 7%;
+  width: 300px;
+  height: 236px;
+  background-color: white;
+  text-align: left;
+  margin: -128px 0 0 0px;
+  padding: 4% 7%;
 }
 
 .big_name {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 .sentence {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 29px 0 0;
-    margin: 10px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 29px 0 0;
+  margin: 10px 0 0 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
 }
 
 #MUSICA {
-    font-size: 32px;
-    display: inline-block;
-    padding: 0 15px;
-    margin: 0 auto;
+  font-size: 32px;
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 #salon_image {
-    margin: 0 0 50px;
+  margin: 0 0 50px;
 }
 
 .salon_image_photo {
-    /* width: 100%; */
-    height: calc(100% * 0.5);
-    padding: 40px 0;
+  /* width: 100%; */
+  height: calc(100% * 0.5);
+  padding: 80px 0;
 }
 
 .salon_photo_left,
 .salon_photo_right {
-    height: 100%;
-    padding: 0;
+  height: 100%;
+  padding: 0;
 }
 
 .salon_image_photo img {
-    width: 100%;
+  width: 100%;
 }
 
 .right_photos {
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
 }
 
 h2 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .flex-column {
-    width: 194px;
-    padding: 0 5px;
-    margin: 5px;
+  width: 194px;
+  padding: 0 5px;
+  margin: 5px;
 }
 
 .flex-column div {
-    width: 194px;
-    height: 224px;
-    overflow: hidden;
+  width: 194px;
+  height: 224px;
+  overflow: hidden;
 }
 
 .flex-column h3 {
-    margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
-
 .meet_our_team_caption {
-    padding: 20px;
-    height: auto;
-    /* overflow: hidden; */
-    margin: -100px 0 0px;
+  padding: 20px;
+  height: auto;
+  /* overflow: hidden; */
+  margin: -100px 0 0px;
 }
 
 .staff_info {
-    padding: 10px;
-    margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 
 .our_services_caption {
-    padding: 0 0 0 50%;
-    margin-bottom: 50px;
+  padding: 0 0 0 50%;
+  margin-bottom: 50px;
 }
 
 #servises .container .service_row:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .service_row {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .caption_photo img {
-    width: 100%;
-    height: 280px;
-    margin: 18px 0 0 0;
-    object-fit: cover;
+  width: 100%;
+  height: 280px;
+  margin: 18px 0 0 0;
+  object-fit: cover;
 }
 
-
 .services_menu_table table {
-    border-style: none;
-    width: 100%;
+  border-style: none;
+  width: 100%;
 }
 
 .services_menu_table th,
 td {
-    padding: 10px 5px 5px 18px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+  padding: 10px 5px 5px 18px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
 }
 
 .services_menu_table th {
-    font-size: 18px;
-    color: white;
-    background: black;
+  font-size: 18px;
+  color: white;
+  background: black;
 }
 
-.services_menu_table th+th {
-    border-left: solid 1px gainsboro;
-    border-right: solid 1px black;
+.services_menu_table th + th {
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px black;
 }
 
-.services_menu_table th+th+th {}
+.services_menu_table th + th + th {
+}
 
 .services_menu_table td {
-    border: solid 1px gainsboro;
+  border: solid 1px gainsboro;
 }
 
 .services_menu_table tr :nth-child(1) {
-    width: 50%;
+  width: 50%;
 }
 
 .services_menu_table tr :nth-child(2) {
-    width: 50%;
+  width: 50%;
 }
 
 .services_menu_table tr :nth-child(3) {
-    width: 50%;
+  width: 50%;
 }
 
 .services_menu_table tr:nth-child(even) {
-    background: #f6f6f6;
+  background: #f6f6f6;
 }
 
 .form_area {
-    padding: 50px;
-    background: black;
-    color: white;
-    margin: 0 auto;
-    max-width: 1200px;
+  padding: 50px;
+  background: black;
+  color: white;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .form_area p {
-    margin: 0;
+  margin: 0;
 }
 
 .appointment_left {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
 }
 
 .input_caption {
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 textarea {
-    width: 250px;
-    height: 100px;
+  width: 250px;
+  height: 100px;
 }
 
 .appointment_area input {
-    width: 250px;
+  width: 250px;
 }
 
 .form_submit {
-    /* width: 250px; */
+  /* width: 250px; */
 }
 
 .form_submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 2px white;
+  background-color: black;
+  color: white;
+  border: solid 2px white;
 }
 
 .caption_appointment {
-    padding: 0px;
+  padding: 0px;
 }
 
 .caption_appointment h2 {
-    /* padding: 0 0 0 0px; */
+  /* padding: 0 0 0 0px; */
 }
 
 .appointment_btn {
-    border: solid 1px white;
-    color: white;
-    height: 30px;
-    padding: 5px 15px;
-    margin: 5px 0;
-    line-height: 100%;
-    text-align: center;
-    padding-top: 7px;
+  border: solid 1px white;
+  color: white;
+  height: 30px;
+  padding: 5px 15px;
+  margin: 5px 0;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .appointment_btn:hover {
-    background-color: white;
-    color: black;
-    opacity: 0.9;
+  background-color: white;
+  color: black;
+  opacity: 0.9;
 }
 
 .appointment_btn p {
-    /* line-height: 100%; */
+  /* line-height: 100%; */
 }
 
 .expression {
-    padding: 100px 0;
-    position: relative;
+  padding: 100px 0;
+  position: relative;
 }
 
 .expression_caption {
-    width: 400px;
-    padding: 60px;
-    position: absolute;
-    right: 9.4%;
-    background: white;
-    z-index: 5;
+  width: 400px;
+  padding: 60px;
+  position: absolute;
+  right: 9.4%;
+  background: white;
+  z-index: 5;
 }
 
 .expression_image {
-    width: 100%;
-    /* position: relative; */
+  width: 100%;
+  /* position: relative; */
 }
 
 .expression_image img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
 .promotions_slide {
-    background-color: whitesmoke;
-    padding: 50px 80px 80px;
+  background-color: whitesmoke;
+  padding: 50px 80px 80px;
 }
 
 .promotions_h2 {
-    color: black;
-    text-align: center;
-    margin-bottom: 30px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .expression_caption h3 {
-    padding: 0 0 0 0px;
+  padding: 0 0 0 0px;
 }
 
 .promotions_caption {
-    width: 40%;
-    height: 300px;
-    background: white;
-    text-align: left;
-    padding: 30px;
-    position: relative;
+  width: 40%;
+  height: 300px;
+  background: white;
+  text-align: left;
+  padding: 30px;
+  position: relative;
 }
 
 .promotions_img {
-    width: 60%;
-    height: 300px;
-    overflow: hidden;
+  width: 60%;
+  height: 300px;
+  overflow: hidden;
 }
 
 .promotions_img img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper_button_area {
-    position: absolute;
-    position: fixed;
-    width: 140px;
-    top: 260px;
-    left: 178px;
+  position: absolute;
+  position: fixed;
+  width: 140px;
+  top: 260px;
+  left: 178px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    width: 60px;
-    height: 62px;
-    background-color: black;
+  width: 60px;
+  height: 62px;
+  background-color: black;
 }
 
 #VIDEO {
-    padding: 5% 10%;
+  padding: 5% 10%;
 }
 
 .video_iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .video_caption {
-    padding: 30px;
+  padding: 30px;
 }
 
 #testmonials {
-    background: whitesmoke;
-    width: 100%;
-    /* height: 350px; */
-    text-align: center;
-    padding-bottom: 30px;
+  background: whitesmoke;
+  width: 100%;
+  /* height: 350px; */
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-
 .testmonials_h2 {
-    padding: 40px 40px 20px;
-    margin: 0;
+  padding: 40px 40px 20px;
+  margin: 0;
 }
 
 .customer_voice {
-    width: 500px;
-    background-color: white;
-    padding: 20px;
-    margin: 0 auto;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 #CONTACT {
-    background: black;
-    /* height: 400px; */
-    color: white;
-    /* padding: 40px 100px 30px; */
-    padding: 3% 7% 3%;
+  background: black;
+  /* height: 400px; */
+  color: white;
+  /* padding: 40px 100px 30px; */
+  padding: 3% 7% 3%;
 }
 
 #CONTACT h2 {
-    margin: 0 0 10px;
-    text-align: left;
+  margin: 0 0 10px;
+  text-align: left;
 }
 
 .google_map {
-    width: 60%;
-    /* height: 270px; */
-    background-color: #f6f6f9;
+  width: 60%;
+  /* height: 270px; */
+  background-color: #f6f6f9;
 }
 
 .contact_address {
-    width: 40%;
-    /* height: 270px; */
-    background-color: white;
-    padding: 50px;
-    color: black;
-    text-align: left;
+  width: 40%;
+  /* height: 270px; */
+  background-color: white;
+  padding: 50px;
+  color: black;
+  text-align: left;
 }
 
 .footer {
-    /* height: 70px; */
-    /* line-height: 70px; */
-    /* text-align: center; */
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
+  /* height: 70px; */
+  /* line-height: 70px; */
+  /* text-align: center; */
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
-.contact_address p {}
+.contact_address p {
+}
 
 /* .contact_top {
     display: flex;
@@ -437,49 +444,49 @@ textarea {
 } */
 
 .contact_caption input {
-    width: 100%;
-    padding: 0;
-    margin: 0 0 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 20px;
 }
 
 .contact_caption p {
-    margin: 0;
+  margin: 0;
 }
 
 #contact_description {
-    width: 100%;
-    margin: 0 0 10px 0;
+  width: 100%;
+  margin: 0 0 10px 0;
 }
 
 .contact_submit {
-    width: 100%;
+  width: 100%;
 }
 
 .contact_submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 1px white;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
 }
 
 .contact_form_btn {
-    border: solid 1px black;
-    padding: 5px 15px;
-    margin: 5px 0;
-    line-height: 100%;
-    text-align: center;
+  border: solid 1px black;
+  padding: 5px 15px;
+  margin: 5px 0;
+  line-height: 100%;
+  text-align: center;
 }
 
 .contact_form_btn:hover {
-    border: solid 1px black;
-    padding: 5px 15px;
-    margin: 5px 0;
-    background-color: black;
-    color: white;
+  border: solid 1px black;
+  padding: 5px 15px;
+  margin: 5px 0;
+  background-color: black;
+  color: white;
 }
 
 .contact_form input,
 textarea {
-    padding: 0 0 0 5px;
+  padding: 0 0 0 5px;
 }
 
 /*
@@ -487,84 +494,104 @@ index.php, page.php css-------------
 */
 
 .index_header {
-    width: 100%;
-    background-color: black;
-    padding: 40px 100px 30px;
-    margin: 0;
+  width: 100%;
+  background-color: black;
+  padding: 40px 100px 30px;
+  margin: 0;
 }
 
 .home_link {
-    color: grey;
-    font-family: sans-serif;
-    font-weight: bold;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .home_link:hover {
-    color: white;
+  color: white;
 }
 
 .index_title {
-    color: white;
-    margin: 0;
-    display: inline-block;
-    margin: 0 5px;
+  color: white;
+  margin: 0;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .index_title_mini {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .blog_card {
-    /* position: relative; */
-    /* margin-top: -50px; */
+  /* position: relative; */
+  /* margin-top: -50px; */
 }
 
 .blog_img {
-    width: 80%;
-    margin: 50px auto;
-    overflow: hidden;
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
 }
 
 .blog_img img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .blog_content {
-    width: 75%;
-    padding: 40px;
-    margin: 0 auto;
-    margin-top: -70px;
-    background: white;
+  width: 75%;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: -70px;
+  background: white;
+}
+
+.blog_content img {
+  width: 100%;
+  object-fit: cover;
+}
+.blog_ {
+  padding-left: 10px;
 }
 
 .archive {
-    padding: 50px 0;
+  padding: 50px 0;
+}
+
+.archive_list {
+  padding: 0;
+}
+
+.archive {
+  padding-left: 20px;
+}
+
+.wp-pagenavi {
+  padding: 0 0 60px 60px;
 }
 
 .read_more {
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    background: black;
-    padding: 10px;
-    color: white;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: black;
+  padding: 10px;
+  color: white;
 }
 
 .read_more:hover {
-    background: white;
-    border: 1px solid black;
-    color: black;
+  background: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .article_content {
-    padding: 50px;
+  padding: 50px;
 }
 
 .page_php_content {
-    padding: 0px;
+  padding: 0px;
 }
 
 /* 
@@ -572,7 +599,7 @@ index.php, page.php css-------------
 */
 
 .post_links {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /*
@@ -580,14 +607,14 @@ index.php, page.php css-------------
 */
 
 .breadcrumb {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0 5px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0 5px;
 }
 
 .breadcrumb_inner a {
-    color: white;
+  color: white;
 }
 
 /*
@@ -595,40 +622,40 @@ index.php, page.php css-------------
 */
 
 .error404 {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 .back_home {
-    color: orange;
+  color: orange;
 }
 
 /* 
 ----------------comments.php 
 */
 .comments {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 .comments h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #comment {
-    width: 100%;
+  width: 100%;
 }
 
 .comments .submit:hover {
-    background-color: black;
-    color: white;
-    border: solid 2px white;
+  background-color: black;
+  color: white;
+  border: solid 2px white;
 }
 
 .comments .comment-body p {
-    margin: 20px;
-    padding: 10px;
-    background: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  background: whitesmoke;
 }
 
 .content {
-    margin: 150px 0px;
+  margin: 150px 0px;
 }

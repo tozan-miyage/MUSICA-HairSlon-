@@ -22,7 +22,7 @@
                                     <?php the_post_thumbnail(array(600, 400)) ?>
                                 </div>
                                 <div class="blog_content">
-                                    <h2 class="article_title"><?php the_title(); ?></h2>
+                                    <h2 class="article_title"><?php the_title(); ?>555</h2>
                                     <div class="d-flex">
                                         <p class="mr-2"> <?php the_modified_date(); ?> </p>
                                         <span class="mr-1">|</span>
