@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MUSICA</title>
+    <title>HairSalonSample</title>
 
     <!-- function.phpでlinkを読み込み -->
     <?php wp_head(); ?>

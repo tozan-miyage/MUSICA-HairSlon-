@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 salon_name_box">
-                    <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR SALON MUSICA</a></h1>
+                    <h1 class="big_name"><a href="<?php echo home_url(); ?>">HAIR SALON SAMPLE</a></h1>
                 </div>
                 <div class="col-12 col-md-8 concept_of_salon">
                     <p class="sentence"><?php bloginfo('description'); ?><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
@@ -208,7 +208,7 @@
                     </div>
                 </div>
 
-                <a href="<?php echo get_page_link(143); ?>" class="">
+                <a href="<?php echo get_page_link(12); ?>" class="">
                     <div class="appointment_btn mt-3">
                         <p class="">ご予約はコチラから</p>
                     </div>

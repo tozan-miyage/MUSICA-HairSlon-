@@ -10,7 +10,7 @@ jQuery(function () {
     // ナビゲーションリンクをクリックしたら、スクロールする
 
 
-    jQuery('a[href^="https://musica.local/#"').click(function () {
+    jQuery('a[href^="https://hair-slon-sample.local/#"').click(function () {
         // headerの高さを指定
         let headerHeight = height + 10;
         // animateの速さを指定
@@ -19,7 +19,7 @@ jQuery(function () {
         let href = jQuery(this).attr("href");
 
         // hrefのurl https://musica.local/を削除
-        const deleteHttps = 'https://musica.local/';
+        const deleteHttps = 'https://hair-slon-sample.local/';
         let scrollTarget = href.replace(deleteHttps, '');
 
         // href属性が#かつ空白であれば、'html',そうでなければ、変数hrefを格納
