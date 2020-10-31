@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Slider main container -->
-                <div class="swiper-container">
+                <div class="col swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -18,14 +18,14 @@
                         </div>
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
 
                     <!-- If we need navigation buttons -->
                     <!-- <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div> -->
 
                     <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
     <!-- the_salon end -->
     <!-- salon_image -->
     <section id="salon_image">
-        <div class="container">
+        <div class="container salon_image">
             <div class="row salon_image_photo">
                 <div class="col-12 col-lg-6 salon_photo_left" data-aos="fade-right">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg" alt="">
@@ -261,10 +261,10 @@
                                                 </h3>
                                                 <?php the_content(); ?>
                                                 <!-- If we need navigation buttons -->
-                                                <div class="swiper_button_area">
+                                                <!-- <div class="swiper_button_area">
                                                     <div class="swiper-button-prev"></div>
                                                     <div class="swiper-button-next"></div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="promotions_img col-12 col-md-7 p-0">
                                                 <?php the_post_thumbnail(array(500, 300)); ?>
@@ -305,49 +305,54 @@
     <!-- video end -->
     <!-- testmonials -->
     <section id="testmonials">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h2 class="testmonials_h2">TESTIMONIALS</h2>
+        <div class="container">
+            <!-- <div class="row"> -->
+            <!-- <div class="col"> -->
+            <h2 class="testmonials_h2">TESTIMONIALS</h2>
 
-                    <div class="swiper-container3">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <?php
-                            $args = array(
-                                'post_type' => 'testmonial',
-                                'posts_per_page' => 5,
-                            );
-                            $testimonials_query = new WP_Query($args);
-                            ?>
-                            <?php if ($testimonials_query->have_posts()) : ?>
-                                <?php while ($testimonials_query->have_posts()) : ?>
-                                    <?php $testimonials_query->the_post(); ?>
-                                    <div class="swiper-slide">
-                                        <div class="customer_voice">
-                                            <h3><?php the_title(); ?></h3>
-                                            <?php the_content(); ?>
-                                        </div>
+            <div class="swiper-container3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <?php
+                    $args = array(
+                        'post_type' => 'testmonial',
+                        'posts_per_page' => 5,
+                    );
+                    $testimonials_query = new WP_Query($args);
+                    ?>
+                    <?php if ($testimonials_query->have_posts()) : ?>
+                        <?php while ($testimonials_query->have_posts()) : ?>
+                            <?php $testimonials_query->the_post(); ?>
+                            <div class="swiper-slide row">
+                                <div class="col-12 col-md-4">
+                                    <div class="customer_face ">
+                                        <?php the_post_thumbnail('thumbnail'); ?>
                                     </div>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
-                            <?php wp_reset_postdata(); ?>
+                                </div>
+                                <div class="customer_voice col-12 col-md-8">
+                                    <?php the_content(); ?>
+                                    <?php the_title(); ?>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
 
-                        </div>
-
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
-                    </div>
                 </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
     </section>
     <!-- testmonials end -->

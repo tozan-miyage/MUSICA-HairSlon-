@@ -12,6 +12,10 @@ ul {
   list-style-type: none;
 }
 
+.container{
+    margin:0 auto;
+}
+
 .post-categories {
   padding-left: 10px;
 }
@@ -81,8 +85,7 @@ a:hover {
   margin: 0 auto;
 }
 
-#salon_image {
-  margin: 0 0 50px;
+.salon_image {
 }
 
 .salon_image_photo {
@@ -337,7 +340,7 @@ textarea {
   object-fit: cover;
 }
 
-.swiper_button_area {
+/* .swiper_button_area {
   position: absolute;
   position: fixed;
   width: 140px;
@@ -350,7 +353,7 @@ textarea {
   width: 60px;
   height: 62px;
   background-color: black;
-}
+} */
 
 #VIDEO {
   padding: 5% 10%;
@@ -374,14 +377,26 @@ textarea {
 }
 
 .testmonials_h2 {
-  padding: 40px 40px 20px;
+  padding: 40px;
   margin: 0;
 }
 
+.swiper-slide{
+    /* width: 100%; */
+}
+.customer_face{
+width:150px;
+height:150px;
+margin:0 auto;
+}
+
+.customer_face img{
+    width: 100%;
+}
 .customer_voice {
-  width: 500px;
-  background-color: white;
-  padding: 20px;
+  /* width: 100%; */
+  /* background-color: white; */
+  /* padding: 20px; */
   margin: 0 auto;
 }
 
