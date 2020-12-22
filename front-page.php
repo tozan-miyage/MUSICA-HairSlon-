@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Slider main container -->
-                <div class="col swiper-container">
+                <div class="col swiper-container swiper-container1">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -17,15 +17,6 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/images/shutterstock_hair_model3.jpg" alt="">
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <!-- <div class="swiper-pagination"></div> -->
-
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div> -->
-
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
         </div>
@@ -82,12 +73,13 @@
                         consequat sem, ut laoreet nisi erat et
                         lectus.Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non
                         congue aliquam, mauris massa
-                        consequat sem, ut laoreet nisi erat et lectus.</p>
+                        consequat sem, ut laoreet nisi erat et lectus.
+                    </p>
                 </div>
                 <div class="col-12 col-lg-8">
-                    <div class="swiper-container2 container p-0">
+                    <div class="container p-0">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper m-0 row">
+                        <div class="m-0 row">
                             <!-- Slides -->
                             <?php
                             $args = array(
@@ -111,23 +103,7 @@
                             <?php endif; ?>
                             <?php wp_reset_postdata(); ?>
 
-                            <!-- <div class="swiper-slide"><img
-                                        src=""
-                                        alt=""></div>
-                                <div class="swiper-slide">
-                                    <img src=""
-                                        alt="">
-                                </div> -->
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div> -->
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -142,7 +118,8 @@
                     <h2>OUR SERVICES</h2>
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar
                         luctus est eget congue. Nam auctor nisi est, nec
-                        tempus lacus viverra nec. </P>
+                        tempus lacus viverra nec.
+                    </P>
                 </div>
             </div>
         </div>
@@ -240,7 +217,7 @@
                     <div class="promotions_slide">
                         <h2 class="promotions_h2">PROMOTIONS AND SPECIALS</h2>
                         <!-- Slider main container -->
-                        <div class="swiper-container3">
+                        <div class="swiper-container2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper container">
                                 <!-- Slides -->
@@ -275,10 +252,6 @@
                                 <?php wp_reset_postdata(); ?>
                                 <!-- Slides -->
                             </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
@@ -296,7 +269,9 @@
                 <div class="col-12 col-md-4 video_caption">
                     <!-- <div class="video_caption"> -->
                     <h2>SHOWREEL</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat et lectus. Nullam non neque eros. Pellentesque nec vulputate eros. Integer scelerisque lorem id massa accumsan, ut faucibus ante suscipit. Nunc tincidunt et ligula vitae pharetra.
+                        <br><br>美容室ラランジェ様より動画使用の承諾は得ています
+                    </p>
                     <!-- </div> -->
                 </div>
             </div>
@@ -338,21 +313,8 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
-
                 </div>
-
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
         </div>
     </section>
     <!-- testmonials end -->

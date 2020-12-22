@@ -356,7 +356,7 @@ textarea {
 } */
 
 #VIDEO {
-  padding: 5% 10%;
+  padding: 3% 3%;
 }
 
 .video_iframe {
@@ -365,7 +365,7 @@ textarea {
 }
 
 .video_caption {
-  padding: 30px;
+  padding: 10px;
 }
 
 #testmonials {
